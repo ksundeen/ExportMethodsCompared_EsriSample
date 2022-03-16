@@ -1,0 +1,2473 @@
+{
+  "version": 3,
+  "targets": {
+    "Xamarin.iOS,Version=v1.0": {
+      "Esri.ArcGISRuntime/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime.runtimes.iOS": "100.13.0"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll",
+          "System.Runtime.Serialization",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.dll": {}
+        },
+        "resource": {
+          "lib/xamarinios10/ar/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/xamarinios10/bs/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "bs"
+          },
+          "lib/xamarinios10/ca/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/xamarinios10/cs/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/xamarinios10/da/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "da"
+          },
+          "lib/xamarinios10/de/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "de"
+          },
+          "lib/xamarinios10/el/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "el"
+          },
+          "lib/xamarinios10/es/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "es"
+          },
+          "lib/xamarinios10/et/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "et"
+          },
+          "lib/xamarinios10/fi/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/xamarinios10/fr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/xamarinios10/he/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "he"
+          },
+          "lib/xamarinios10/hr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/xamarinios10/hu/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/xamarinios10/id/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "id"
+          },
+          "lib/xamarinios10/it/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "it"
+          },
+          "lib/xamarinios10/ja/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/xamarinios10/ko/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/xamarinios10/lt/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "lt"
+          },
+          "lib/xamarinios10/lv/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "lv"
+          },
+          "lib/xamarinios10/nb-NO/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "nb-NO"
+          },
+          "lib/xamarinios10/nl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/xamarinios10/no/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "no"
+          },
+          "lib/xamarinios10/pl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/xamarinios10/pt-BR/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/xamarinios10/pt-PT/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/xamarinios10/ro/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/xamarinios10/ru/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/xamarinios10/sk/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/xamarinios10/sl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sl"
+          },
+          "lib/xamarinios10/sr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sr"
+          },
+          "lib/xamarinios10/sv/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/xamarinios10/th/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "th"
+          },
+          "lib/xamarinios10/tr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/xamarinios10/uk/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/xamarinios10/vi/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/xamarinios10/zh-CN/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/xamarinios10/zh-HK/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/xamarinios10/zh-Hans/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/xamarinios10/zh-TW/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-TW"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/Esri.ArcGISRuntime.targets": {}
+        }
+      },
+      "Esri.ArcGISRuntime.runtimes.iOS/100.13.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.iOS10/Esri.ArcGISRuntime.runtimes.iOS.targets": {}
+        }
+      },
+      "Esri.ArcGISRuntime.Xamarin.Forms/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0",
+          "Esri.ArcGISRuntime.Xamarin.iOS": "100.13.0",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.Xamarin.Forms.dll": {}
+        }
+      },
+      "Esri.ArcGISRuntime.Xamarin.iOS/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0"
+        },
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.iOS.dll": {}
+        },
+        "build": {
+          "buildTransitive/xamarin.ios10/Esri.ArcGISRuntime.Xamarin.iOS.targets": {}
+        }
+      },
+      "Xamarin.Forms/5.0.0.2244": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "ExportTiles/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0",
+          "Esri.ArcGISRuntime.Xamarin.Forms": "100.13.0",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "compile": {
+          "bin/placeholder/ExportTiles.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExportTiles.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win": {
+      "Esri.ArcGISRuntime/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime.runtimes.iOS": "100.13.0"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll",
+          "System.Runtime.Serialization",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.dll": {}
+        },
+        "resource": {
+          "lib/xamarinios10/ar/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/xamarinios10/bs/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "bs"
+          },
+          "lib/xamarinios10/ca/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/xamarinios10/cs/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/xamarinios10/da/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "da"
+          },
+          "lib/xamarinios10/de/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "de"
+          },
+          "lib/xamarinios10/el/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "el"
+          },
+          "lib/xamarinios10/es/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "es"
+          },
+          "lib/xamarinios10/et/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "et"
+          },
+          "lib/xamarinios10/fi/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/xamarinios10/fr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/xamarinios10/he/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "he"
+          },
+          "lib/xamarinios10/hr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/xamarinios10/hu/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/xamarinios10/id/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "id"
+          },
+          "lib/xamarinios10/it/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "it"
+          },
+          "lib/xamarinios10/ja/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/xamarinios10/ko/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/xamarinios10/lt/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "lt"
+          },
+          "lib/xamarinios10/lv/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "lv"
+          },
+          "lib/xamarinios10/nb-NO/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "nb-NO"
+          },
+          "lib/xamarinios10/nl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/xamarinios10/no/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "no"
+          },
+          "lib/xamarinios10/pl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/xamarinios10/pt-BR/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/xamarinios10/pt-PT/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/xamarinios10/ro/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/xamarinios10/ru/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/xamarinios10/sk/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/xamarinios10/sl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sl"
+          },
+          "lib/xamarinios10/sr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sr"
+          },
+          "lib/xamarinios10/sv/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/xamarinios10/th/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "th"
+          },
+          "lib/xamarinios10/tr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/xamarinios10/uk/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/xamarinios10/vi/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/xamarinios10/zh-CN/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/xamarinios10/zh-HK/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/xamarinios10/zh-Hans/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/xamarinios10/zh-TW/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-TW"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/Esri.ArcGISRuntime.targets": {}
+        }
+      },
+      "Esri.ArcGISRuntime.runtimes.iOS/100.13.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.iOS10/Esri.ArcGISRuntime.runtimes.iOS.targets": {}
+        }
+      },
+      "Esri.ArcGISRuntime.Xamarin.Forms/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0",
+          "Esri.ArcGISRuntime.Xamarin.iOS": "100.13.0",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.Xamarin.Forms.dll": {}
+        }
+      },
+      "Esri.ArcGISRuntime.Xamarin.iOS/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0"
+        },
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.iOS.dll": {}
+        },
+        "build": {
+          "buildTransitive/xamarin.ios10/Esri.ArcGISRuntime.Xamarin.iOS.targets": {}
+        }
+      },
+      "Xamarin.Forms/5.0.0.2244": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "ExportTiles/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0",
+          "Esri.ArcGISRuntime.Xamarin.Forms": "100.13.0",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "compile": {
+          "bin/placeholder/ExportTiles.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExportTiles.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win-x64": {
+      "Esri.ArcGISRuntime/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime.runtimes.iOS": "100.13.0"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll",
+          "System.Runtime.Serialization",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.dll": {}
+        },
+        "resource": {
+          "lib/xamarinios10/ar/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/xamarinios10/bs/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "bs"
+          },
+          "lib/xamarinios10/ca/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/xamarinios10/cs/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/xamarinios10/da/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "da"
+          },
+          "lib/xamarinios10/de/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "de"
+          },
+          "lib/xamarinios10/el/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "el"
+          },
+          "lib/xamarinios10/es/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "es"
+          },
+          "lib/xamarinios10/et/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "et"
+          },
+          "lib/xamarinios10/fi/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/xamarinios10/fr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/xamarinios10/he/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "he"
+          },
+          "lib/xamarinios10/hr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/xamarinios10/hu/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/xamarinios10/id/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "id"
+          },
+          "lib/xamarinios10/it/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "it"
+          },
+          "lib/xamarinios10/ja/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/xamarinios10/ko/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/xamarinios10/lt/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "lt"
+          },
+          "lib/xamarinios10/lv/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "lv"
+          },
+          "lib/xamarinios10/nb-NO/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "nb-NO"
+          },
+          "lib/xamarinios10/nl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/xamarinios10/no/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "no"
+          },
+          "lib/xamarinios10/pl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/xamarinios10/pt-BR/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/xamarinios10/pt-PT/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/xamarinios10/ro/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/xamarinios10/ru/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/xamarinios10/sk/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/xamarinios10/sl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sl"
+          },
+          "lib/xamarinios10/sr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sr"
+          },
+          "lib/xamarinios10/sv/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/xamarinios10/th/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "th"
+          },
+          "lib/xamarinios10/tr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/xamarinios10/uk/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/xamarinios10/vi/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/xamarinios10/zh-CN/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/xamarinios10/zh-HK/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/xamarinios10/zh-Hans/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/xamarinios10/zh-TW/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-TW"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/Esri.ArcGISRuntime.targets": {}
+        }
+      },
+      "Esri.ArcGISRuntime.runtimes.iOS/100.13.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.iOS10/Esri.ArcGISRuntime.runtimes.iOS.targets": {}
+        }
+      },
+      "Esri.ArcGISRuntime.Xamarin.Forms/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0",
+          "Esri.ArcGISRuntime.Xamarin.iOS": "100.13.0",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.Xamarin.Forms.dll": {}
+        }
+      },
+      "Esri.ArcGISRuntime.Xamarin.iOS/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0"
+        },
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.iOS.dll": {}
+        },
+        "build": {
+          "buildTransitive/xamarin.ios10/Esri.ArcGISRuntime.Xamarin.iOS.targets": {}
+        }
+      },
+      "Xamarin.Forms/5.0.0.2244": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "ExportTiles/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0",
+          "Esri.ArcGISRuntime.Xamarin.Forms": "100.13.0",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "compile": {
+          "bin/placeholder/ExportTiles.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExportTiles.dll": {}
+        }
+      }
+    },
+    "Xamarin.iOS,Version=v1.0/win-x86": {
+      "Esri.ArcGISRuntime/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime.runtimes.iOS": "100.13.0"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll",
+          "System.Runtime.Serialization",
+          "Xamarin.iOS"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.dll": {}
+        },
+        "resource": {
+          "lib/xamarinios10/ar/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/xamarinios10/bs/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "bs"
+          },
+          "lib/xamarinios10/ca/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/xamarinios10/cs/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/xamarinios10/da/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "da"
+          },
+          "lib/xamarinios10/de/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "de"
+          },
+          "lib/xamarinios10/el/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "el"
+          },
+          "lib/xamarinios10/es/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "es"
+          },
+          "lib/xamarinios10/et/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "et"
+          },
+          "lib/xamarinios10/fi/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/xamarinios10/fr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/xamarinios10/he/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "he"
+          },
+          "lib/xamarinios10/hr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/xamarinios10/hu/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/xamarinios10/id/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "id"
+          },
+          "lib/xamarinios10/it/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "it"
+          },
+          "lib/xamarinios10/ja/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/xamarinios10/ko/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/xamarinios10/lt/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "lt"
+          },
+          "lib/xamarinios10/lv/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "lv"
+          },
+          "lib/xamarinios10/nb-NO/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "nb-NO"
+          },
+          "lib/xamarinios10/nl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/xamarinios10/no/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "no"
+          },
+          "lib/xamarinios10/pl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/xamarinios10/pt-BR/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/xamarinios10/pt-PT/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/xamarinios10/ro/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/xamarinios10/ru/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/xamarinios10/sk/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/xamarinios10/sl/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sl"
+          },
+          "lib/xamarinios10/sr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sr"
+          },
+          "lib/xamarinios10/sv/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/xamarinios10/th/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "th"
+          },
+          "lib/xamarinios10/tr/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/xamarinios10/uk/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/xamarinios10/vi/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/xamarinios10/zh-CN/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/xamarinios10/zh-HK/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/xamarinios10/zh-Hans/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/xamarinios10/zh-TW/Esri.ArcGISRuntime.resources.dll": {
+            "locale": "zh-TW"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.iOS10/Esri.ArcGISRuntime.targets": {}
+        }
+      },
+      "Esri.ArcGISRuntime.runtimes.iOS/100.13.0": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.iOS10/Esri.ArcGISRuntime.runtimes.iOS.targets": {}
+        }
+      },
+      "Esri.ArcGISRuntime.Xamarin.Forms/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0",
+          "Esri.ArcGISRuntime.Xamarin.iOS": "100.13.0",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "frameworkAssemblies": [
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.Xamarin.Forms.dll": {}
+        }
+      },
+      "Esri.ArcGISRuntime.Xamarin.iOS/100.13.0": {
+        "type": "package",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0"
+        },
+        "frameworkAssemblies": [
+          "OpenTK-1.0",
+          "System.Drawing.Common.dll"
+        ],
+        "compile": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/xamarinios10/Esri.ArcGISRuntime.iOS.dll": {}
+        },
+        "build": {
+          "buildTransitive/xamarin.ios10/Esri.ArcGISRuntime.Xamarin.iOS.targets": {}
+        }
+      },
+      "Xamarin.Forms/5.0.0.2244": {
+        "type": "package",
+        "compile": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll": {},
+          "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll": {}
+        },
+        "resource": {
+          "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ar"
+          },
+          "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "da"
+          },
+          "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "de"
+          },
+          "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "el"
+          },
+          "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "es"
+          },
+          "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fi"
+          },
+          "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "he"
+          },
+          "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hi"
+          },
+          "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hr"
+          },
+          "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "hu"
+          },
+          "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "id"
+          },
+          "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "it"
+          },
+          "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ms"
+          },
+          "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ro"
+          },
+          "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sk"
+          },
+          "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "th"
+          },
+          "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "uk"
+          },
+          "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "vi"
+          },
+          "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-HK"
+          },
+          "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        },
+        "build": {
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
+        }
+      },
+      "ExportTiles/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Esri.ArcGISRuntime": "100.13.0",
+          "Esri.ArcGISRuntime.Xamarin.Forms": "100.13.0",
+          "Xamarin.Forms": "5.0.0.2244"
+        },
+        "compile": {
+          "bin/placeholder/ExportTiles.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ExportTiles.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Esri.ArcGISRuntime/100.13.0": {
+      "sha512": "RacdcdHIoOgJpk0BpCZ7W00GgqhovniUVT0dg1dhMV8xPrl7c18dgxBrrZu8IviKIV6TEGHaDDRxb8JTzdieJQ==",
+      "type": "package",
+      "path": "esri.arcgisruntime/100.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid10/Esri.ArcGISRuntime.targets",
+        "build/Xamarin.iOS10/Esri.ArcGISRuntime.targets",
+        "build/net461/Esri.ArcGISRuntime.targets",
+        "build/net6.0-android1.0/Esri.ArcGISRuntime.targets",
+        "build/net6.0-android31.0/Esri.ArcGISRuntime.targets",
+        "build/net6.0-ios1.0/Esri.ArcGISRuntime.targets",
+        "build/net6.0-ios13.0/Esri.ArcGISRuntime.targets",
+        "build/net6.0-windows10.0.18362.0/Esri.ArcGISRuntime.targets",
+        "build/net6.0-windows7.0/Esri.ArcGISRuntime.targets",
+        "build/net6.0/Esri.ArcGISRuntime.targets",
+        "build/netcoreapp/Esri.ArcGISRuntime.targets",
+        "build/uap10.0.18362/Esri.ArcGISRuntime.targets",
+        "buildTransitive/MonoAndroid10/Esri.ArcGISRuntime.targets",
+        "buildTransitive/Xamarin.iOS10/Esri.ArcGISRuntime.targets",
+        "buildTransitive/net461/Esri.ArcGISRuntime.targets",
+        "buildTransitive/net6.0-android1.0/Esri.ArcGISRuntime.targets",
+        "buildTransitive/net6.0-android31.0/Esri.ArcGISRuntime.targets",
+        "buildTransitive/net6.0-ios1.0/Esri.ArcGISRuntime.targets",
+        "buildTransitive/net6.0-ios13.0/Esri.ArcGISRuntime.targets",
+        "buildTransitive/net6.0-windows10.0.18362.0/Esri.ArcGISRuntime.targets",
+        "buildTransitive/net6.0-windows7.0/Esri.ArcGISRuntime.targets",
+        "buildTransitive/net6.0/Esri.ArcGISRuntime.targets",
+        "buildTransitive/netcoreapp/Esri.ArcGISRuntime.targets",
+        "buildTransitive/uap10.0.18362/Esri.ArcGISRuntime.targets",
+        "esri.arcgisruntime.100.13.0.nupkg.sha512",
+        "esri.arcgisruntime.nuspec",
+        "icon.png",
+        "legal/Copyright_and_Trademarks.pdf",
+        "legal/eula.txt",
+        "lib/monoandroid60/Esri.ArcGISRuntime.dll",
+        "lib/monoandroid60/Esri.ArcGISRuntime.xml",
+        "lib/monoandroid60/ar/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/bs/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/ca/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/cs/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/da/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/de/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/el/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/es/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/et/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/fi/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/fr/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/he/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/hr/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/hu/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/id/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/it/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/ja/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/ko/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/lt/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/lv/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/nb-NO/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/nl/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/no/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/pl/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/pt-BR/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/pt-PT/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/ro/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/ru/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/sk/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/sl/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/sr/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/sv/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/th/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/tr/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/uk/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/vi/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/zh-CN/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/zh-HK/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/zh-Hans/Esri.ArcGISRuntime.resources.dll",
+        "lib/monoandroid60/zh-TW/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/Esri.ArcGISRuntime.dll",
+        "lib/net461/Esri.ArcGISRuntime.xml",
+        "lib/net461/ar/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/bs/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/ca/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/cs/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/da/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/de/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/el/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/es/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/et/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/fi/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/fr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/he/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/hr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/hu/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/id/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/it/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/ja/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/ko/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/lt/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/lv/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/nb-NO/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/nl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/no/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/pl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/pt-BR/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/pt-PT/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/ro/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/ru/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/sk/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/sl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/sr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/sv/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/th/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/tr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/uk/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/vi/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/zh-CN/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/zh-HK/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/zh-Hans/Esri.ArcGISRuntime.resources.dll",
+        "lib/net461/zh-TW/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/Esri.ArcGISRuntime.dll",
+        "lib/net6.0-android31.0/Esri.ArcGISRuntime.xml",
+        "lib/net6.0-android31.0/ar/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/bs/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/ca/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/cs/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/da/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/de/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/el/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/es/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/et/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/fi/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/fr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/he/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/hr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/hu/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/id/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/it/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/ja/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/ko/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/lt/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/lv/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/nb-NO/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/nl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/no/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/pl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/pt-BR/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/pt-PT/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/ro/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/ru/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/sk/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/sl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/sr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/sv/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/th/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/tr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/uk/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/vi/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/zh-CN/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/zh-HK/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/zh-Hans/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-android31.0/zh-TW/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/Esri.ArcGISRuntime.dll",
+        "lib/net6.0-ios13.0/Esri.ArcGISRuntime.xml",
+        "lib/net6.0-ios13.0/ar/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/bs/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/ca/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/cs/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/da/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/de/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/el/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/es/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/et/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/fi/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/fr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/he/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/hr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/hu/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/id/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/it/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/ja/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/ko/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/lt/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/lv/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/nb-NO/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/nl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/no/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/pl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/pt-BR/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/pt-PT/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/ro/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/ru/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/sk/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/sl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/sr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/sv/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/th/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/tr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/uk/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/vi/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/zh-CN/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/zh-HK/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/zh-Hans/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-ios13.0/zh-TW/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/Esri.ArcGISRuntime.dll",
+        "lib/net6.0-windows10.0.18362/Esri.ArcGISRuntime.xml",
+        "lib/net6.0-windows10.0.18362/ar/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/bs/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/ca/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/cs/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/da/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/de/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/el/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/es/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/et/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/fi/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/fr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/he/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/hr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/hu/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/id/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/it/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/ja/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/ko/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/lt/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/lv/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/nb-NO/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/nl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/no/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/pl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/pt-BR/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/pt-PT/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/ro/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/ru/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/sk/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/sl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/sr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/sv/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/th/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/tr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/uk/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/vi/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/zh-CN/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/zh-HK/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/zh-Hans/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0-windows10.0.18362/zh-TW/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/Esri.ArcGISRuntime.dll",
+        "lib/net6.0/Esri.ArcGISRuntime.xml",
+        "lib/net6.0/ar/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/bs/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/ca/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/cs/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/da/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/de/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/el/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/es/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/et/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/fi/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/fr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/he/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/hr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/hu/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/id/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/it/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/ja/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/ko/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/lt/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/lv/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/nb-NO/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/nl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/no/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/pl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/pt-BR/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/pt-PT/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/ro/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/ru/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/sk/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/sl/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/sr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/sv/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/th/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/tr/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/uk/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/vi/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/zh-CN/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/zh-HK/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/zh-Hans/Esri.ArcGISRuntime.resources.dll",
+        "lib/net6.0/zh-TW/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/Esri.ArcGISRuntime.dll",
+        "lib/netstandard2.0/Esri.ArcGISRuntime.xml",
+        "lib/netstandard2.0/ar/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/bs/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/ca/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/cs/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/da/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/de/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/el/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/es/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/et/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/fi/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/fr/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/he/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/hr/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/hu/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/id/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/it/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/ja/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/ko/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/lt/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/lv/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/nb-NO/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/nl/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/no/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/pl/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/pt-BR/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/pt-PT/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/ro/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/ru/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/sk/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/sl/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/sr/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/sv/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/th/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/tr/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/uk/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/vi/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/zh-CN/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/zh-HK/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/zh-Hans/Esri.ArcGISRuntime.resources.dll",
+        "lib/netstandard2.0/zh-TW/Esri.ArcGISRuntime.resources.dll",
+        "lib/uap10.0.18362/Esri.ArcGISRuntime.dll",
+        "lib/uap10.0.18362/Esri.ArcGISRuntime.pri",
+        "lib/uap10.0.18362/Esri.ArcGISRuntime.xml",
+        "lib/xamarinios10/Esri.ArcGISRuntime.dll",
+        "lib/xamarinios10/Esri.ArcGISRuntime.xml",
+        "lib/xamarinios10/ar/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/bs/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/ca/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/cs/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/da/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/de/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/el/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/es/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/et/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/fi/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/fr/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/he/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/hr/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/hu/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/id/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/it/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/ja/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/ko/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/lt/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/lv/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/nb-NO/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/nl/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/no/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/pl/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/pt-BR/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/pt-PT/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/ro/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/ru/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/sk/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/sl/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/sr/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/sv/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/th/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/tr/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/uk/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/vi/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/zh-CN/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/zh-HK/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/zh-Hans/Esri.ArcGISRuntime.resources.dll",
+        "lib/xamarinios10/zh-TW/Esri.ArcGISRuntime.resources.dll",
+        "resources/network_analyst/strings.bin"
+      ]
+    },
+    "Esri.ArcGISRuntime.runtimes.iOS/100.13.0": {
+      "sha512": "TM0erwPsArcyL2U3exmsyYbbmXLvSgkTpzLQvnbpFCmuZ4q7orewyaAuEbzFyFF3NlJGM8PY9rBRNfXAi2R6EA==",
+      "type": "package",
+      "path": "esri.arcgisruntime.runtimes.ios/100.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Xamarin.iOS10/Esri.ArcGISRuntime.runtimes.iOS.targets",
+        "build/net6.0-ios13/Esri.ArcGISRuntime.runtimes.iOS.targets",
+        "buildTransitive/Xamarin.iOS10/Esri.ArcGISRuntime.runtimes.iOS.targets",
+        "buildTransitive/net6.0-ios13/Esri.ArcGISRuntime.runtimes.iOS.targets",
+        "esri.arcgisruntime.runtimes.ios.100.13.0.nupkg.sha512",
+        "esri.arcgisruntime.runtimes.ios.nuspec",
+        "framework/ios-arm64/native/ArcGIS-arm64.framework/ArcGIS-arm64",
+        "framework/ios-arm64/native/ArcGIS-arm64.framework/Info.plist",
+        "framework/ios-arm64/native/Runtimecore.framework/Info.plist",
+        "framework/ios-arm64/native/Runtimecore.framework/Runtimecore",
+        "framework/iossimulator-arm64/native/ArcGIS-simx64.framework/ArcGIS-simarm64",
+        "framework/iossimulator-arm64/native/ArcGIS-simx64.framework/Info.plist",
+        "framework/iossimulator-arm64/native/Runtimecore.framework/Info.plist",
+        "framework/iossimulator-arm64/native/Runtimecore.framework/Runtimecore",
+        "framework/iossimulator-x64/native/ArcGIS-simx64.framework/ArcGIS-simx64",
+        "framework/iossimulator-x64/native/ArcGIS-simx64.framework/Info.plist",
+        "framework/iossimulator-x64/native/Runtimecore.framework/Info.plist",
+        "framework/iossimulator-x64/native/Runtimecore.framework/Runtimecore",
+        "icon.png",
+        "legal/Copyright_and_Trademarks.pdf",
+        "legal/eula.txt",
+        "legal/open-source-acknowledgements.pdf"
+      ]
+    },
+    "Esri.ArcGISRuntime.Xamarin.Forms/100.13.0": {
+      "sha512": "0doeycm3V3GW8Uvj1K+JKok8sy5c++IqUlN0x1VmRgOWZ39lUUaHGbtC+8mersAhlH8Ir0A/txTUXf7OPOCpbg==",
+      "type": "package",
+      "path": "esri.arcgisruntime.xamarin.forms/100.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "esri.arcgisruntime.xamarin.forms.100.13.0.nupkg.sha512",
+        "esri.arcgisruntime.xamarin.forms.nuspec",
+        "icon.png",
+        "legal/Copyright_and_Trademarks.pdf",
+        "legal/eula.txt",
+        "lib/monoandroid10.0/Esri.ArcGISRuntime.Xamarin.Forms.dll",
+        "lib/monoandroid10.0/Esri.ArcGISRuntime.Xamarin.Forms.xml",
+        "lib/netstandard2.0/Esri.ArcGISRuntime.Xamarin.Forms.dll",
+        "lib/netstandard2.0/Esri.ArcGISRuntime.Xamarin.Forms.xml",
+        "lib/uap10.0.18362/Esri.ArcGISRuntime.Xamarin.Forms.dll",
+        "lib/uap10.0.18362/Esri.ArcGISRuntime.Xamarin.Forms.pri",
+        "lib/uap10.0.18362/Esri.ArcGISRuntime.Xamarin.Forms.xml",
+        "lib/xamarinios10/Esri.ArcGISRuntime.Xamarin.Forms.dll",
+        "lib/xamarinios10/Esri.ArcGISRuntime.Xamarin.Forms.xml"
+      ]
+    },
+    "Esri.ArcGISRuntime.Xamarin.iOS/100.13.0": {
+      "sha512": "7m0yk36WAVmieoctCS4XMpQsWQseviuHXE8/rIpHlRaX4ugW3qV06JAx6+H/NjcYAHAvsW3FCNFywE6+d4dGqA==",
+      "type": "package",
+      "path": "esri.arcgisruntime.xamarin.ios/100.13.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net6.0-ios13/Esri.ArcGISRuntime.Xamarin.iOS.targets",
+        "build/xamarin.ios10/Esri.ArcGISRuntime.Xamarin.iOS.targets",
+        "buildTransitive/net6.0-ios13/Esri.ArcGISRuntime.Xamarin.iOS.targets",
+        "buildTransitive/xamarin.ios10/Esri.ArcGISRuntime.Xamarin.iOS.targets",
+        "esri.arcgisruntime.xamarin.ios.100.13.0.nupkg.sha512",
+        "esri.arcgisruntime.xamarin.ios.nuspec",
+        "icon.png",
+        "legal/Copyright_and_Trademarks.pdf",
+        "legal/eula.txt",
+        "lib/net6.0-ios13.0/Esri.ArcGISRuntime.iOS.dll",
+        "lib/net6.0-ios13.0/Esri.ArcGISRuntime.iOS.xml",
+        "lib/xamarinios10/Esri.ArcGISRuntime.iOS.dll",
+        "lib/xamarinios10/Esri.ArcGISRuntime.iOS.xml",
+        "resources/shaders/arm64/atmosphere_accurate_3d_ps.metallib",
+        "resources/shaders/arm64/atmosphere_accurate_3d_vs.metallib",
+        "resources/shaders/arm64/atmosphere_textured_3d_ps.metallib",
+        "resources/shaders/arm64/atmosphere_textured_3d_vs.metallib",
+        "resources/shaders/arm64/basic_draw_ps.metallib",
+        "resources/shaders/arm64/basic_draw_vs.metallib",
+        "resources/shaders/arm64/basic_usage_3d_depth_ps.metallib",
+        "resources/shaders/arm64/color_draw_ps.metallib",
+        "resources/shaders/arm64/color_draw_vs.metallib",
+        "resources/shaders/arm64/common_3d_rem_depth_ps.metallib",
+        "resources/shaders/arm64/deferred_full_screen_rem_ps.metallib",
+        "resources/shaders/arm64/full_screen_quad_vs.metallib",
+        "resources/shaders/arm64/magnifier_draw_ps.metallib",
+        "resources/shaders/arm64/magnifier_draw_vs.metallib",
+        "resources/shaders/arm64/measure_line_depth_ps.metallib",
+        "resources/shaders/arm64/measure_line_draw_ps.metallib",
+        "resources/shaders/arm64/measure_line_draw_vs.metallib",
+        "resources/shaders/arm64/modelline_3d_depth_vs.metallib",
+        "resources/shaders/arm64/modelline_3d_normal_vs.metallib",
+        "resources/shaders/arm64/point_3d_billboard_ps.metallib",
+        "resources/shaders/arm64/point_3d_billboard_sdf_draw_ps.metallib",
+        "resources/shaders/arm64/point_3d_billboard_sdf_draw_vs.metallib",
+        "resources/shaders/arm64/point_3d_billboard_vs.metallib",
+        "resources/shaders/arm64/point_3d_depth_vs.metallib",
+        "resources/shaders/arm64/point_3d_overlay_ps.metallib",
+        "resources/shaders/arm64/point_3d_overlay_vs.metallib",
+        "resources/shaders/arm64/point_3d_rem_billboard_vs.metallib",
+        "resources/shaders/arm64/point_cloud_3d_depth_ps.metallib",
+        "resources/shaders/arm64/point_cloud_3d_depth_vs.metallib",
+        "resources/shaders/arm64/point_cloud_3d_draw_ps.metallib",
+        "resources/shaders/arm64/point_cloud_3d_draw_vs.metallib",
+        "resources/shaders/arm64/polygon_3d_depth_vs.metallib",
+        "resources/shaders/arm64/polygon_3d_normal_ps.metallib",
+        "resources/shaders/arm64/polygon_3d_overlay_ps.metallib",
+        "resources/shaders/arm64/polygon_3d_vs.metallib",
+        "resources/shaders/arm64/polygon_outline_3d_overlay_ps.metallib",
+        "resources/shaders/arm64/polygon_outline_3d_overlay_vs.metallib",
+        "resources/shaders/arm64/polyline_3d_depth_ps.metallib",
+        "resources/shaders/arm64/polyline_3d_depth_vs.metallib",
+        "resources/shaders/arm64/polyline_3d_normal_ps.metallib",
+        "resources/shaders/arm64/polyline_3d_overlay_ps.metallib",
+        "resources/shaders/arm64/polyline_3d_vs.metallib",
+        "resources/shaders/arm64/re_basic_texture_draw_vs.metallib",
+        "resources/shaders/arm64/re_dilate_reduce_ps.metallib",
+        "resources/shaders/arm64/re_gauss_blur_13x13_ps.metallib",
+        "resources/shaders/arm64/re_gauss_blur_17x17_ps.metallib",
+        "resources/shaders/arm64/re_gauss_blur_5x5_ps.metallib",
+        "resources/shaders/arm64/re_gauss_blur_9x9_ps.metallib",
+        "resources/shaders/arm64/re_multi_texture_draw_ps.metallib",
+        "resources/shaders/arm64/re_multi_ubo_draw_ps.metallib",
+        "resources/shaders/arm64/re_selection_finalize_mask_ps.metallib",
+        "resources/shaders/arm64/re_selection_finalize_ps.metallib",
+        "resources/shaders/arm64/re_tex_image_modify_ps.metallib",
+        "resources/shaders/arm64/re_texture_draw_ps.metallib",
+        "resources/shaders/arm64/re_texture_draw_vs.metallib",
+        "resources/shaders/arm64/re_texture_scaled_draw_vs.metallib",
+        "resources/shaders/arm64/re_vertex_texture_scaled_draw_vs.metallib",
+        "resources/shaders/arm64/rem_oit_compose_ps.metallib",
+        "resources/shaders/arm64/sequence_area_line_normal_ps.metallib",
+        "resources/shaders/arm64/sequence_area_line_normal_vs.metallib",
+        "resources/shaders/arm64/sequence_area_line_pick_ps.metallib",
+        "resources/shaders/arm64/sequence_area_line_pick_vs.metallib",
+        "resources/shaders/arm64/sequence_dynamic_marker_normal_ps.metallib",
+        "resources/shaders/arm64/sequence_dynamic_marker_normal_vs.metallib",
+        "resources/shaders/arm64/sequence_dynamic_marker_pick_ps.metallib",
+        "resources/shaders/arm64/sequence_dynamic_marker_pick_vs.metallib",
+        "resources/shaders/arm64/sequence_marker_normal_ps.metallib",
+        "resources/shaders/arm64/sequence_marker_normal_vs.metallib",
+        "resources/shaders/arm64/sequence_marker_pick_ps.metallib",
+        "resources/shaders/arm64/sequence_marker_pick_vs.metallib",
+        "resources/shaders/arm64/sequence_point_normal_ps.metallib",
+        "resources/shaders/arm64/sequence_point_normal_vs.metallib",
+        "resources/shaders/arm64/sequence_point_pick_ps.metallib",
+        "resources/shaders/arm64/sequence_point_pick_vs.metallib",
+        "resources/shaders/arm64/sequence_point_sdf_normal_ps.metallib",
+        "resources/shaders/arm64/sequence_point_sdf_normal_vs.metallib",
+        "resources/shaders/arm64/sequence_point_sdf_pick_ps.metallib",
+        "resources/shaders/arm64/sequence_point_sdf_pick_vs.metallib",
+        "resources/shaders/arm64/star_3d_ps.metallib",
+        "resources/shaders/arm64/star_3d_vs.metallib",
+        "resources/shaders/arm64/text_3d_draw_ps.metallib",
+        "resources/shaders/arm64/text_3d_draw_vs.metallib",
+        "resources/shaders/arm64/tile_3d_depth_vs.metallib",
+        "resources/shaders/arm64/tile_3d_draped_graphics_ps.metallib",
+        "resources/shaders/arm64/tile_3d_draped_graphics_vs.metallib",
+        "resources/shaders/arm64/tile_3d_draw_ps.metallib",
+        "resources/shaders/arm64/tile_3d_draw_vs.metallib",
+        "resources/shaders/arm64/tile_3d_ground_overlay_ps.metallib",
+        "resources/shaders/arm64/tile_3d_ground_overlay_vs.metallib",
+        "resources/shaders/arm64/tile_3d_rem_depth_vs.metallib",
+        "resources/shaders/arm64/tile_3d_rem_draw_ps.metallib",
+        "resources/shaders/arm64/tile_3d_rem_draw_vs.metallib",
+        "resources/shaders/arm64/tile_3d_rem_offscreen_ps.metallib",
+        "resources/shaders/arm64/tile_3d_rem_offscreen_vs.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_depth_ps.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_depth_vs.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_draw_ps.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_draw_vs.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_rem_depth_ps.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_rem_depth_vs.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_rem_draw_ps.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_rem_draw_vs.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_rem_offscreen_ps.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_rem_offscreen_vs.metallib",
+        "resources/shaders/arm64/trianglemesh_3d_rem_oit_accumulate_ps.metallib",
+        "resources/shaders/arm64/trianglemesh_non_instanced_3d_depth_vs.metallib",
+        "resources/shaders/arm64/trianglemesh_non_instanced_3d_normal_vs.metallib",
+        "resources/shaders/arm64/viewshed_post_process_3d_ps.metallib",
+        "resources/shaders/arm64/vt_background_pattern_ps.metallib",
+        "resources/shaders/arm64/vt_background_pattern_vs.metallib",
+        "resources/shaders/arm64/vt_background_solid_ps.metallib",
+        "resources/shaders/arm64/vt_background_solid_vs.metallib",
+        "resources/shaders/arm64/vt_circle_ps.metallib",
+        "resources/shaders/arm64/vt_circle_vs.metallib",
+        "resources/shaders/arm64/vt_fill_outline_dd_ps.metallib",
+        "resources/shaders/arm64/vt_fill_outline_dd_vs.metallib",
+        "resources/shaders/arm64/vt_fill_outline_ps.metallib",
+        "resources/shaders/arm64/vt_fill_outline_vs.metallib",
+        "resources/shaders/arm64/vt_fill_pattern_dd_ps.metallib",
+        "resources/shaders/arm64/vt_fill_pattern_dd_vs.metallib",
+        "resources/shaders/arm64/vt_fill_pattern_ps.metallib",
+        "resources/shaders/arm64/vt_fill_pattern_vs.metallib",
+        "resources/shaders/arm64/vt_fill_solid_dd_ps.metallib",
+        "resources/shaders/arm64/vt_fill_solid_dd_vs.metallib",
+        "resources/shaders/arm64/vt_fill_solid_ps.metallib",
+        "resources/shaders/arm64/vt_fill_solid_tile_translate_vs.metallib",
+        "resources/shaders/arm64/vt_fill_solid_v2_ps.metallib",
+        "resources/shaders/arm64/vt_fill_solid_view_translate_vs.metallib",
+        "resources/shaders/arm64/vt_fill_solid_vs.metallib",
+        "resources/shaders/arm64/vt_icon_ps.metallib",
+        "resources/shaders/arm64/vt_icon_tile_translate_dd_vs.metallib",
+        "resources/shaders/arm64/vt_icon_tile_translate_vs.metallib",
+        "resources/shaders/arm64/vt_icon_vs.metallib",
+        "resources/shaders/arm64/vt_line_dd_v2_vs.metallib",
+        "resources/shaders/arm64/vt_line_pattern_ps.metallib",
+        "resources/shaders/arm64/vt_line_pattern_vs.metallib",
+        "resources/shaders/arm64/vt_line_ps.metallib",
+        "resources/shaders/arm64/vt_line_v2_vs.metallib",
+        "resources/shaders/arm64/vt_line_vs.metallib",
+        "resources/shaders/arm64/vt_sdf_ps.metallib",
+        "resources/shaders/arm64/vt_sdf_vs.metallib",
+        "resources/shaders/arm64/vt_stencil_write_ps.metallib",
+        "resources/shaders/arm64/vt_stencil_write_vs.metallib",
+        "resources/shaders/arm64/water_3d_ps.metallib",
+        "resources/shaders/arm64/water_3d_vs.metallib",
+        "resources/shaders/simarm64/atmosphere_accurate_3d_ps.metallib",
+        "resources/shaders/simarm64/atmosphere_accurate_3d_vs.metallib",
+        "resources/shaders/simarm64/atmosphere_textured_3d_ps.metallib",
+        "resources/shaders/simarm64/atmosphere_textured_3d_vs.metallib",
+        "resources/shaders/simarm64/basic_draw_ps.metallib",
+        "resources/shaders/simarm64/basic_draw_vs.metallib",
+        "resources/shaders/simarm64/basic_usage_3d_depth_ps.metallib",
+        "resources/shaders/simarm64/color_draw_ps.metallib",
+        "resources/shaders/simarm64/color_draw_vs.metallib",
+        "resources/shaders/simarm64/common_3d_rem_depth_ps.metallib",
+        "resources/shaders/simarm64/deferred_full_screen_rem_ps.metallib",
+        "resources/shaders/simarm64/full_screen_quad_vs.metallib",
+        "resources/shaders/simarm64/magnifier_draw_ps.metallib",
+        "resources/shaders/simarm64/magnifier_draw_vs.metallib",
+        "resources/shaders/simarm64/measure_line_depth_ps.metallib",
+        "resources/shaders/simarm64/measure_line_draw_ps.metallib",
+        "resources/shaders/simarm64/measure_line_draw_vs.metallib",
+        "resources/shaders/simarm64/modelline_3d_depth_vs.metallib",
+        "resources/shaders/simarm64/modelline_3d_normal_vs.metallib",
+        "resources/shaders/simarm64/point_3d_billboard_ps.metallib",
+        "resources/shaders/simarm64/point_3d_billboard_sdf_draw_ps.metallib",
+        "resources/shaders/simarm64/point_3d_billboard_sdf_draw_vs.metallib",
+        "resources/shaders/simarm64/point_3d_billboard_vs.metallib",
+        "resources/shaders/simarm64/point_3d_depth_vs.metallib",
+        "resources/shaders/simarm64/point_3d_overlay_ps.metallib",
+        "resources/shaders/simarm64/point_3d_overlay_vs.metallib",
+        "resources/shaders/simarm64/point_3d_rem_billboard_vs.metallib",
+        "resources/shaders/simarm64/point_cloud_3d_depth_ps.metallib",
+        "resources/shaders/simarm64/point_cloud_3d_depth_vs.metallib",
+        "resources/shaders/simarm64/point_cloud_3d_draw_ps.metallib",
+        "resources/shaders/simarm64/point_cloud_3d_draw_vs.metallib",
+        "resources/shaders/simarm64/polygon_3d_depth_vs.metallib",
+        "resources/shaders/simarm64/polygon_3d_normal_ps.metallib",
+        "resources/shaders/simarm64/polygon_3d_overlay_ps.metallib",
+        "resources/shaders/simarm64/polygon_3d_vs.metallib",
+        "resources/shaders/simarm64/polygon_outline_3d_overlay_ps.metallib",
+        "resources/shaders/simarm64/polygon_outline_3d_overlay_vs.metallib",
+        "resources/shaders/simarm64/polyline_3d_depth_ps.metallib",
+        "resources/shaders/simarm64/polyline_3d_depth_vs.metallib",
+        "resources/shaders/simarm64/polyline_3d_normal_ps.metallib",
+        "resources/shaders/simarm64/polyline_3d_overlay_ps.metallib",
+        "resources/shaders/simarm64/polyline_3d_vs.metallib",
+        "resources/shaders/simarm64/re_basic_texture_draw_vs.metallib",
+        "resources/shaders/simarm64/re_dilate_reduce_ps.metallib",
+        "resources/shaders/simarm64/re_gauss_blur_13x13_ps.metallib",
+        "resources/shaders/simarm64/re_gauss_blur_17x17_ps.metallib",
+        "resources/shaders/simarm64/re_gauss_blur_5x5_ps.metallib",
+        "resources/shaders/simarm64/re_gauss_blur_9x9_ps.metallib",
+        "resources/shaders/simarm64/re_multi_texture_draw_ps.metallib",
+        "resources/shaders/simarm64/re_multi_ubo_draw_ps.metallib",
+        "resources/shaders/simarm64/re_selection_finalize_mask_ps.metallib",
+        "resources/shaders/simarm64/re_selection_finalize_ps.metallib",
+        "resources/shaders/simarm64/re_tex_image_modify_ps.metallib",
+        "resources/shaders/simarm64/re_texture_draw_ps.metallib",
+        "resources/shaders/simarm64/re_texture_draw_vs.metallib",
+        "resources/shaders/simarm64/re_texture_scaled_draw_vs.metallib",
+        "resources/shaders/simarm64/re_vertex_texture_scaled_draw_vs.metallib",
+        "resources/shaders/simarm64/rem_oit_compose_ps.metallib",
+        "resources/shaders/simarm64/sequence_area_line_normal_ps.metallib",
+        "resources/shaders/simarm64/sequence_area_line_normal_vs.metallib",
+        "resources/shaders/simarm64/sequence_area_line_pick_ps.metallib",
+        "resources/shaders/simarm64/sequence_area_line_pick_vs.metallib",
+        "resources/shaders/simarm64/sequence_dynamic_marker_normal_ps.metallib",
+        "resources/shaders/simarm64/sequence_dynamic_marker_normal_vs.metallib",
+        "resources/shaders/simarm64/sequence_dynamic_marker_pick_ps.metallib",
+        "resources/shaders/simarm64/sequence_dynamic_marker_pick_vs.metallib",
+        "resources/shaders/simarm64/sequence_marker_normal_ps.metallib",
+        "resources/shaders/simarm64/sequence_marker_normal_vs.metallib",
+        "resources/shaders/simarm64/sequence_marker_pick_ps.metallib",
+        "resources/shaders/simarm64/sequence_marker_pick_vs.metallib",
+        "resources/shaders/simarm64/sequence_point_normal_ps.metallib",
+        "resources/shaders/simarm64/sequence_point_normal_vs.metallib",
+        "resources/shaders/simarm64/sequence_point_pick_ps.metallib",
+        "resources/shaders/simarm64/sequence_point_pick_vs.metallib",
+        "resources/shaders/simarm64/sequence_point_sdf_normal_ps.metallib",
+        "resources/shaders/simarm64/sequence_point_sdf_normal_vs.metallib",
+        "resources/shaders/simarm64/sequence_point_sdf_pick_ps.metallib",
+        "resources/shaders/simarm64/sequence_point_sdf_pick_vs.metallib",
+        "resources/shaders/simarm64/star_3d_ps.metallib",
+        "resources/shaders/simarm64/star_3d_vs.metallib",
+        "resources/shaders/simarm64/text_3d_draw_ps.metallib",
+        "resources/shaders/simarm64/text_3d_draw_vs.metallib",
+        "resources/shaders/simarm64/tile_3d_depth_vs.metallib",
+        "resources/shaders/simarm64/tile_3d_draped_graphics_ps.metallib",
+        "resources/shaders/simarm64/tile_3d_draped_graphics_vs.metallib",
+        "resources/shaders/simarm64/tile_3d_draw_ps.metallib",
+        "resources/shaders/simarm64/tile_3d_draw_vs.metallib",
+        "resources/shaders/simarm64/tile_3d_ground_overlay_ps.metallib",
+        "resources/shaders/simarm64/tile_3d_ground_overlay_vs.metallib",
+        "resources/shaders/simarm64/tile_3d_rem_depth_vs.metallib",
+        "resources/shaders/simarm64/tile_3d_rem_draw_ps.metallib",
+        "resources/shaders/simarm64/tile_3d_rem_draw_vs.metallib",
+        "resources/shaders/simarm64/tile_3d_rem_offscreen_ps.metallib",
+        "resources/shaders/simarm64/tile_3d_rem_offscreen_vs.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_depth_ps.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_depth_vs.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_draw_ps.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_draw_vs.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_rem_depth_ps.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_rem_depth_vs.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_rem_draw_ps.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_rem_draw_vs.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_rem_offscreen_ps.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_rem_offscreen_vs.metallib",
+        "resources/shaders/simarm64/trianglemesh_3d_rem_oit_accumulate_ps.metallib",
+        "resources/shaders/simarm64/trianglemesh_non_instanced_3d_depth_vs.metallib",
+        "resources/shaders/simarm64/trianglemesh_non_instanced_3d_normal_vs.metallib",
+        "resources/shaders/simarm64/viewshed_post_process_3d_ps.metallib",
+        "resources/shaders/simarm64/vt_background_pattern_ps.metallib",
+        "resources/shaders/simarm64/vt_background_pattern_vs.metallib",
+        "resources/shaders/simarm64/vt_background_solid_ps.metallib",
+        "resources/shaders/simarm64/vt_background_solid_vs.metallib",
+        "resources/shaders/simarm64/vt_circle_ps.metallib",
+        "resources/shaders/simarm64/vt_circle_vs.metallib",
+        "resources/shaders/simarm64/vt_fill_outline_dd_ps.metallib",
+        "resources/shaders/simarm64/vt_fill_outline_dd_vs.metallib",
+        "resources/shaders/simarm64/vt_fill_outline_ps.metallib",
+        "resources/shaders/simarm64/vt_fill_outline_vs.metallib",
+        "resources/shaders/simarm64/vt_fill_pattern_dd_ps.metallib",
+        "resources/shaders/simarm64/vt_fill_pattern_dd_vs.metallib",
+        "resources/shaders/simarm64/vt_fill_pattern_ps.metallib",
+        "resources/shaders/simarm64/vt_fill_pattern_vs.metallib",
+        "resources/shaders/simarm64/vt_fill_solid_dd_ps.metallib",
+        "resources/shaders/simarm64/vt_fill_solid_dd_vs.metallib",
+        "resources/shaders/simarm64/vt_fill_solid_ps.metallib",
+        "resources/shaders/simarm64/vt_fill_solid_tile_translate_vs.metallib",
+        "resources/shaders/simarm64/vt_fill_solid_v2_ps.metallib",
+        "resources/shaders/simarm64/vt_fill_solid_view_translate_vs.metallib",
+        "resources/shaders/simarm64/vt_fill_solid_vs.metallib",
+        "resources/shaders/simarm64/vt_icon_ps.metallib",
+        "resources/shaders/simarm64/vt_icon_tile_translate_dd_vs.metallib",
+        "resources/shaders/simarm64/vt_icon_tile_translate_vs.metallib",
+        "resources/shaders/simarm64/vt_icon_vs.metallib",
+        "resources/shaders/simarm64/vt_line_dd_v2_vs.metallib",
+        "resources/shaders/simarm64/vt_line_pattern_ps.metallib",
+        "resources/shaders/simarm64/vt_line_pattern_vs.metallib",
+        "resources/shaders/simarm64/vt_line_ps.metallib",
+        "resources/shaders/simarm64/vt_line_v2_vs.metallib",
+        "resources/shaders/simarm64/vt_line_vs.metallib",
+        "resources/shaders/simarm64/vt_sdf_ps.metallib",
+        "resources/shaders/simarm64/vt_sdf_vs.metallib",
+        "resources/shaders/simarm64/vt_stencil_write_ps.metallib",
+        "resources/shaders/simarm64/vt_stencil_write_vs.metallib",
+        "resources/shaders/simarm64/water_3d_ps.metallib",
+        "resources/shaders/simarm64/water_3d_vs.metallib",
+        "resources/shaders/simx64/atmosphere_accurate_3d_ps.metallib",
+        "resources/shaders/simx64/atmosphere_accurate_3d_vs.metallib",
+        "resources/shaders/simx64/atmosphere_textured_3d_ps.metallib",
+        "resources/shaders/simx64/atmosphere_textured_3d_vs.metallib",
+        "resources/shaders/simx64/basic_draw_ps.metallib",
+        "resources/shaders/simx64/basic_draw_vs.metallib",
+        "resources/shaders/simx64/basic_usage_3d_depth_ps.metallib",
+        "resources/shaders/simx64/color_draw_ps.metallib",
+        "resources/shaders/simx64/color_draw_vs.metallib",
+        "resources/shaders/simx64/common_3d_rem_depth_ps.metallib",
+        "resources/shaders/simx64/deferred_full_screen_rem_ps.metallib",
+        "resources/shaders/simx64/full_screen_quad_vs.metallib",
+        "resources/shaders/simx64/magnifier_draw_ps.metallib",
+        "resources/shaders/simx64/magnifier_draw_vs.metallib",
+        "resources/shaders/simx64/measure_line_depth_ps.metallib",
+        "resources/shaders/simx64/measure_line_draw_ps.metallib",
+        "resources/shaders/simx64/measure_line_draw_vs.metallib",
+        "resources/shaders/simx64/modelline_3d_depth_vs.metallib",
+        "resources/shaders/simx64/modelline_3d_normal_vs.metallib",
+        "resources/shaders/simx64/point_3d_billboard_ps.metallib",
+        "resources/shaders/simx64/point_3d_billboard_sdf_draw_ps.metallib",
+        "resources/shaders/simx64/point_3d_billboard_sdf_draw_vs.metallib",
+        "resources/shaders/simx64/point_3d_billboard_vs.metallib",
+        "resources/shaders/simx64/point_3d_depth_vs.metallib",
+        "resources/shaders/simx64/point_3d_overlay_ps.metallib",
+        "resources/shaders/simx64/point_3d_overlay_vs.metallib",
+        "resources/shaders/simx64/point_3d_rem_billboard_vs.metallib",
+        "resources/shaders/simx64/point_cloud_3d_depth_ps.metallib",
+        "resources/shaders/simx64/point_cloud_3d_depth_vs.metallib",
+        "resources/shaders/simx64/point_cloud_3d_draw_ps.metallib",
+        "resources/shaders/simx64/point_cloud_3d_draw_vs.metallib",
+        "resources/shaders/simx64/polygon_3d_depth_vs.metallib",
+        "resources/shaders/simx64/polygon_3d_normal_ps.metallib",
+        "resources/shaders/simx64/polygon_3d_overlay_ps.metallib",
+        "resources/shaders/simx64/polygon_3d_vs.metallib",
+        "resources/shaders/simx64/polygon_outline_3d_overlay_ps.metallib",
+        "resources/shaders/simx64/polygon_outline_3d_overlay_vs.metallib",
+        "resources/shaders/simx64/polyline_3d_depth_ps.metallib",
+        "resources/shaders/simx64/polyline_3d_depth_vs.metallib",
+        "resources/shaders/simx64/polyline_3d_normal_ps.metallib",
+        "resources/shaders/simx64/polyline_3d_overlay_ps.metallib",
+        "resources/shaders/simx64/polyline_3d_vs.metallib",
+        "resources/shaders/simx64/re_basic_texture_draw_vs.metallib",
+        "resources/shaders/simx64/re_dilate_reduce_ps.metallib",
+        "resources/shaders/simx64/re_gauss_blur_13x13_ps.metallib",
+        "resources/shaders/simx64/re_gauss_blur_17x17_ps.metallib",
+        "resources/shaders/simx64/re_gauss_blur_5x5_ps.metallib",
+        "resources/shaders/simx64/re_gauss_blur_9x9_ps.metallib",
+        "resources/shaders/simx64/re_multi_texture_draw_ps.metallib",
+        "resources/shaders/simx64/re_multi_ubo_draw_ps.metallib",
+        "resources/shaders/simx64/re_selection_finalize_mask_ps.metallib",
+        "resources/shaders/simx64/re_selection_finalize_ps.metallib",
+        "resources/shaders/simx64/re_tex_image_modify_ps.metallib",
+        "resources/shaders/simx64/re_texture_draw_ps.metallib",
+        "resources/shaders/simx64/re_texture_draw_vs.metallib",
+        "resources/shaders/simx64/re_texture_scaled_draw_vs.metallib",
+        "resources/shaders/simx64/re_vertex_texture_scaled_draw_vs.metallib",
+        "resources/shaders/simx64/rem_oit_compose_ps.metallib",
+        "resources/shaders/simx64/sequence_area_line_normal_ps.metallib",
+        "resources/shaders/simx64/sequence_area_line_normal_vs.metallib",
+        "resources/shaders/simx64/sequence_area_line_pick_ps.metallib",
+        "resources/shaders/simx64/sequence_area_line_pick_vs.metallib",
+        "resources/shaders/simx64/sequence_dynamic_marker_normal_ps.metallib",
+        "resources/shaders/simx64/sequence_dynamic_marker_normal_vs.metallib",
+        "resources/shaders/simx64/sequence_dynamic_marker_pick_ps.metallib",
+        "resources/shaders/simx64/sequence_dynamic_marker_pick_vs.metallib",
+        "resources/shaders/simx64/sequence_marker_normal_ps.metallib",
+        "resources/shaders/simx64/sequence_marker_normal_vs.metallib",
+        "resources/shaders/simx64/sequence_marker_pick_ps.metallib",
+        "resources/shaders/simx64/sequence_marker_pick_vs.metallib",
+        "resources/shaders/simx64/sequence_point_normal_ps.metallib",
+        "resources/shaders/simx64/sequence_point_normal_vs.metallib",
+        "resources/shaders/simx64/sequence_point_pick_ps.metallib",
+        "resources/shaders/simx64/sequence_point_pick_vs.metallib",
+        "resources/shaders/simx64/sequence_point_sdf_normal_ps.metallib",
+        "resources/shaders/simx64/sequence_point_sdf_normal_vs.metallib",
+        "resources/shaders/simx64/sequence_point_sdf_pick_ps.metallib",
+        "resources/shaders/simx64/sequence_point_sdf_pick_vs.metallib",
+        "resources/shaders/simx64/star_3d_ps.metallib",
+        "resources/shaders/simx64/star_3d_vs.metallib",
+        "resources/shaders/simx64/text_3d_draw_ps.metallib",
+        "resources/shaders/simx64/text_3d_draw_vs.metallib",
+        "resources/shaders/simx64/tile_3d_depth_vs.metallib",
+        "resources/shaders/simx64/tile_3d_draped_graphics_ps.metallib",
+        "resources/shaders/simx64/tile_3d_draped_graphics_vs.metallib",
+        "resources/shaders/simx64/tile_3d_draw_ps.metallib",
+        "resources/shaders/simx64/tile_3d_draw_vs.metallib",
+        "resources/shaders/simx64/tile_3d_ground_overlay_ps.metallib",
+        "resources/shaders/simx64/tile_3d_ground_overlay_vs.metallib",
+        "resources/shaders/simx64/tile_3d_rem_depth_vs.metallib",
+        "resources/shaders/simx64/tile_3d_rem_draw_ps.metallib",
+        "resources/shaders/simx64/tile_3d_rem_draw_vs.metallib",
+        "resources/shaders/simx64/tile_3d_rem_offscreen_ps.metallib",
+        "resources/shaders/simx64/tile_3d_rem_offscreen_vs.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_depth_ps.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_depth_vs.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_draw_ps.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_draw_vs.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_rem_depth_ps.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_rem_depth_vs.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_rem_draw_ps.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_rem_draw_vs.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_rem_offscreen_ps.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_rem_offscreen_vs.metallib",
+        "resources/shaders/simx64/trianglemesh_3d_rem_oit_accumulate_ps.metallib",
+        "resources/shaders/simx64/trianglemesh_non_instanced_3d_depth_vs.metallib",
+        "resources/shaders/simx64/trianglemesh_non_instanced_3d_normal_vs.metallib",
+        "resources/shaders/simx64/viewshed_post_process_3d_ps.metallib",
+        "resources/shaders/simx64/vt_background_pattern_ps.metallib",
+        "resources/shaders/simx64/vt_background_pattern_vs.metallib",
+        "resources/shaders/simx64/vt_background_solid_ps.metallib",
+        "resources/shaders/simx64/vt_background_solid_vs.metallib",
+        "resources/shaders/simx64/vt_circle_ps.metallib",
+        "resources/shaders/simx64/vt_circle_vs.metallib",
+        "resources/shaders/simx64/vt_fill_outline_dd_ps.metallib",
+        "resources/shaders/simx64/vt_fill_outline_dd_vs.metallib",
+        "resources/shaders/simx64/vt_fill_outline_ps.metallib",
+        "resources/shaders/simx64/vt_fill_outline_vs.metallib",
+        "resources/shaders/simx64/vt_fill_pattern_dd_ps.metallib",
+        "resources/shaders/simx64/vt_fill_pattern_dd_vs.metallib",
+        "resources/shaders/simx64/vt_fill_pattern_ps.metallib",
+        "resources/shaders/simx64/vt_fill_pattern_vs.metallib",
+        "resources/shaders/simx64/vt_fill_solid_dd_ps.metallib",
+        "resources/shaders/simx64/vt_fill_solid_dd_vs.metallib",
+        "resources/shaders/simx64/vt_fill_solid_ps.metallib",
+        "resources/shaders/simx64/vt_fill_solid_tile_translate_vs.metallib",
+        "resources/shaders/simx64/vt_fill_solid_v2_ps.metallib",
+        "resources/shaders/simx64/vt_fill_solid_view_translate_vs.metallib",
+        "resources/shaders/simx64/vt_fill_solid_vs.metallib",
+        "resources/shaders/simx64/vt_icon_ps.metallib",
+        "resources/shaders/simx64/vt_icon_tile_translate_dd_vs.metallib",
+        "resources/shaders/simx64/vt_icon_tile_translate_vs.metallib",
+        "resources/shaders/simx64/vt_icon_vs.metallib",
+        "resources/shaders/simx64/vt_line_dd_v2_vs.metallib",
+        "resources/shaders/simx64/vt_line_pattern_ps.metallib",
+        "resources/shaders/simx64/vt_line_pattern_vs.metallib",
+        "resources/shaders/simx64/vt_line_ps.metallib",
+        "resources/shaders/simx64/vt_line_v2_vs.metallib",
+        "resources/shaders/simx64/vt_line_vs.metallib",
+        "resources/shaders/simx64/vt_sdf_ps.metallib",
+        "resources/shaders/simx64/vt_sdf_vs.metallib",
+        "resources/shaders/simx64/vt_stencil_write_ps.metallib",
+        "resources/shaders/simx64/vt_stencil_write_vs.metallib",
+        "resources/shaders/simx64/water_3d_ps.metallib",
+        "resources/shaders/simx64/water_3d_vs.metallib"
+      ]
+    },
+    "Xamarin.Forms/5.0.0.2244": {
+      "sha512": "Ssr+0Pf11oHcaMHM4dHXW1NGex0h9uH7gQxuoLtiZcdPtXBli3SXzY3rF9ovp4Bw2mTe7cYpvy554pIpuW6fvA==",
+      "type": "package",
+      "path": "xamarin.forms/5.0.0.2244",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Assets/xamarin_128x128.png",
+        "build/MonoAndroid10/proguard.cfg",
+        "build/Xamarin.Forms.DefaultItems.props",
+        "build/Xamarin.Forms.DefaultItems.targets",
+        "build/Xamarin.Forms.props",
+        "build/Xamarin.Forms.targets",
+        "build/net46/Mono.Cecil.Mdb.dll",
+        "build/net46/Mono.Cecil.Pdb.dll",
+        "build/net46/Mono.Cecil.Rocks.dll",
+        "build/net46/Mono.Cecil.dll",
+        "build/net46/System.ValueTuple.dll",
+        "build/net46/Xamarin.Forms.Build.Tasks.dll",
+        "build/net46/Xamarin.Forms.Core.dll",
+        "build/net46/Xamarin.Forms.Xaml.dll",
+        "build/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard2.0/Mono.Cecil.dll",
+        "build/netstandard2.0/System.CodeDom.dll",
+        "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
+        "build/netstandard2.0/Xamarin.Forms.Core.dll",
+        "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "buildTransitive/MonoAndroid10/proguard.cfg",
+        "buildTransitive/Xamarin.Forms.DefaultItems.props",
+        "buildTransitive/Xamarin.Forms.DefaultItems.targets",
+        "buildTransitive/Xamarin.Forms.props",
+        "buildTransitive/Xamarin.Forms.targets",
+        "buildTransitive/net46/Mono.Cecil.Mdb.dll",
+        "buildTransitive/net46/Mono.Cecil.Pdb.dll",
+        "buildTransitive/net46/Mono.Cecil.Rocks.dll",
+        "buildTransitive/net46/Mono.Cecil.dll",
+        "buildTransitive/net46/System.ValueTuple.dll",
+        "buildTransitive/net46/Xamarin.Forms.Build.Tasks.dll",
+        "buildTransitive/net46/Xamarin.Forms.Core.dll",
+        "buildTransitive/net46/Xamarin.Forms.Xaml.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.dll",
+        "buildTransitive/netstandard2.0/System.CodeDom.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Core.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/MonoAndroid10.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/MonoAndroid10.0/FormsViewGroup.dll",
+        "lib/MonoAndroid10.0/FormsViewGroup.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Core.xml",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Platform.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.dll",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.pdb",
+        "lib/MonoAndroid10.0/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.Mac/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/Xamarin.Mac/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.xml",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ca/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/cs/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/da/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/de/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/el/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/es/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/fr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/he/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/hu/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/id/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/it/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ja/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ko/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ms/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/nb/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/nl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pl/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt-BR/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/pt/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ro/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/ru/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/sk/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/sv/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/th/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/tr/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/uk/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/vi/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.xml",
+        "lib/netstandard2.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard2.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard2.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard2.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard2.0/Xamarin.Forms.Xaml.xml",
+        "lib/tizen40/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/tizen40/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/tizen40/Xamarin.Forms.Core.dll",
+        "lib/tizen40/Xamarin.Forms.Core.pdb",
+        "lib/tizen40/Xamarin.Forms.Core.xml",
+        "lib/tizen40/Xamarin.Forms.Platform.Tizen.dll",
+        "lib/tizen40/Xamarin.Forms.Platform.Tizen.pdb",
+        "lib/tizen40/Xamarin.Forms.Platform.dll",
+        "lib/tizen40/Xamarin.Forms.Xaml.dll",
+        "lib/tizen40/Xamarin.Forms.Xaml.pdb",
+        "lib/tizen40/Xamarin.Forms.Xaml.xml",
+        "lib/uap10.0.14393/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0.14393/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0.14393/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Core.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FlyoutPageControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsFlyout.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0.14393/Xamarin.Forms.Xaml.xml",
+        "lib/uap10.0.16299/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/uap10.0.16299/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/uap10.0.16299/Properties/Xamarin.Forms.Platform.UAP.rd.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Core.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP.pri",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/CollectionView/ItemsViewStyles.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FlyoutPageControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsAutoSuggestBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsCheckBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsEmbeddedPageWrapper.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsFlyout.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/DensityStyles/Compact.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Resources.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellPageWrapper.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Xamarin.Forms.Platform.UAP.xr.xml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
+        "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
+        "xamarin.forms.5.0.0.2244.nupkg.sha512",
+        "xamarin.forms.nuspec"
+      ]
+    },
+    "ExportTiles/1.0.0": {
+      "type": "project",
+      "path": "../ExportTiles/ExportTiles.csproj",
+      "msbuildProject": "../ExportTiles/ExportTiles.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "Xamarin.iOS,Version=v1.0": [
+      "ExportTiles >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportTiles.iOS\\ExportTiles.iOS.csproj",
+      "projectName": "ExportTiles.iOS",
+      "projectPath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportTiles.iOS\\ExportTiles.iOS.csproj",
+      "packagesPath": "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportTiles.iOS\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\kimberly.sundeen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "xamarinios10"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\kimberly.sundeen\\AppData\\Local\\Esri\\NuGet": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "projectReferences": {
+            "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportTiles\\ExportTiles.csproj": {
+              "projectPath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportTiles\\ExportTiles.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "xamarinios10": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

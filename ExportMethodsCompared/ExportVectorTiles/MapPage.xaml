@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:esriUI="clr-namespace:Esri.ArcGISRuntime.Xamarin.Forms;assembly=Esri.ArcGISRuntime.Xamarin.Forms"
+			 xmlns:local="clr-namespace:ExportVectorTiles;assembly=ExportVectorTiles"
+             x:Class="ExportVectorTiles.MapPage">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<local:MapViewModel x:Key="MapViewModel" />
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" >
+            <esriUI:MapView x:Name="MyMapView" Map="{Binding Map, Source={StaticResource MapViewModel}}" />
+        </Grid>
+        <Grid Grid.Row="1" Margin="5">
+            <Button x:Name="VectorTilesCachePreviewButton" Text="Export Vector Tiles" Grid.Column="0" Clicked="VectorTilesCachePreviewButton_Clicked" IsEnabled="False" />
+            <Button x:Name="RasterTilesCachePreviewButton" Text="Export Raster Tiles" Grid.Column="1" Clicked="RasterTilesCachePreviewButton_Clicked" IsEnabled="False" />
+            <Button x:Name="OfflineMapPreviewButton" Text="Export Offline Map" Grid.Column="2" Clicked="OfflineMapPreviewButton_Clicked" IsEnabled="False" />
+            <Button x:Name="UseExistingOfflineMapPreviewButton" Text="Export Offline Map" Grid.Column="2" Clicked="UseExistingBasemap_Click" IsEnabled="False" />
+        </Grid>
+        <Grid Grid.Row="2" Margin="5">
+            <ActivityIndicator x:Name="VectorTilesProgressBar" Margin="5" IsVisible="False" Grid.Column="0" IsRunning="True" />
+            <ActivityIndicator x:Name="RasterTilesProgressBar" IsVisible="False" Grid.Column="1" IsRunning="True" />
+            <ActivityIndicator x:Name="OfflineMapProgressBar" IsVisible="False" Grid.Column="2" IsRunning="True" />
+            <ActivityIndicator x:Name="UseExistingOfflineMapProgressBar" IsVisible="False" Grid.Column="2" IsRunning="True" />
+        </Grid>        
+    </Grid>
+</ContentPage>

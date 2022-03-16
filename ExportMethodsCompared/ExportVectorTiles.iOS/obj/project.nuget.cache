@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "FxP91hf/JEGlbJh+n+lk/lbPGkm0HKzD9LCayBNb0Go6b5OftJ98pv/PdC9opgN+kpByTHtWXbMVCPf2YR9INQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.iOS\\ExportVectorTiles.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime\\100.13.0\\esri.arcgisruntime.100.13.0.nupkg.sha512",
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime.runtimes.ios\\100.13.0\\esri.arcgisruntime.runtimes.ios.100.13.0.nupkg.sha512",
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime.xamarin.forms\\100.13.0\\esri.arcgisruntime.xamarin.forms.100.13.0.nupkg.sha512",
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime.xamarin.ios\\100.13.0\\esri.arcgisruntime.xamarin.ios.100.13.0.nupkg.sha512",
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\xamarin.forms\\5.0.0.2244\\xamarin.forms.5.0.0.2244.nupkg.sha512"
+  ],
+  "logs": []
+}

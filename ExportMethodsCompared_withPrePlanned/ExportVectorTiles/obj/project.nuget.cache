@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "+VVoX8ZX4mqog4sbnoDNHgjT+isEUYI+LB0MEbz9DFLwrRDdX14cC/9B/eFxwvjW7es3Icyn17kT4kgljVk79g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared_withPrePlanned\\ExportVectorTiles\\ExportVectorTiles.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime\\100.13.0\\esri.arcgisruntime.100.13.0.nupkg.sha512",
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime.xamarin.forms\\100.13.0\\esri.arcgisruntime.xamarin.forms.100.13.0.nupkg.sha512",
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\xamarin.forms\\5.0.0.2244\\xamarin.forms.5.0.0.2244.nupkg.sha512"
+  ],
+  "logs": []
+}
