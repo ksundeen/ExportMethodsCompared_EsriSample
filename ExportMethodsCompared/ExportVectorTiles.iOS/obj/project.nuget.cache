@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FxP91hf/JEGlbJh+n+lk/lbPGkm0HKzD9LCayBNb0Go6b5OftJ98pv/PdC9opgN+kpByTHtWXbMVCPf2YR9INQ==",
+  "dgSpecHash": "PbslnzgTFqNtKp+6Cb/NmoMyggX//5jGFWHcMAexvV4z4SEngdbbe0GT0IIu2eA5BgPpqur2rTCVnQHIYhHOxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.iOS\\ExportVectorTiles.iOS.csproj",
+  "projectFilePath": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.iOS\\ExportVectorTiles.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime\\100.13.0\\esri.arcgisruntime.100.13.0.nupkg.sha512",
     "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime.runtimes.ios\\100.13.0\\esri.arcgisruntime.runtimes.ios.100.13.0.nupkg.sha512",

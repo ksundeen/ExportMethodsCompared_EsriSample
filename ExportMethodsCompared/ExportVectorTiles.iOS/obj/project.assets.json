@@ -2422,11 +2422,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.iOS\\ExportVectorTiles.iOS.csproj",
+      "projectUniqueName": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.iOS\\ExportVectorTiles.iOS.csproj",
       "projectName": "ExportVectorTiles.iOS",
-      "projectPath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.iOS\\ExportVectorTiles.iOS.csproj",
+      "projectPath": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.iOS\\ExportVectorTiles.iOS.csproj",
       "packagesPath": "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.iOS\\obj\\",
+      "outputPath": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2448,8 +2448,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles\\ExportVectorTiles.csproj": {
-              "projectPath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles\\ExportVectorTiles.csproj"
+            "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles\\ExportVectorTiles.csproj": {
+              "projectPath": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles\\ExportVectorTiles.csproj"
             }
           }
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sekOUzPLp9MF4WIDA7xVWPVFD0Gfmx7lV2hSi/GxFfc4/IxTCYckkCQGfrT0ZSiESB6bXqchVb+gvonQtQfPbw==",
+  "dgSpecHash": "8zg0BRKFH6viDHhMKVAD+4ss/MenFMbR6wTcg8g/tbdf/mJL6LJhPeQlnBFPnSbtsZPkbzrJugV1qOBpEJj9RQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.UWP\\ExportVectorTiles.UWP.csproj",
+  "projectFilePath": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.UWP\\ExportVectorTiles.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime\\100.13.0\\esri.arcgisruntime.100.13.0.nupkg.sha512",
     "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime.runtimes.win10\\100.13.0\\esri.arcgisruntime.runtimes.win10.100.13.0.nupkg.sha512",

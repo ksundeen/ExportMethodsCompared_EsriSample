@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>b4686218-b283-4f11-86af-e37d325ad535</PackageIdentityName>
     <PackageIdentityPublisher>CN=nic10991</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\bin\x86\Debug\ExportVectorTiles.UWP.exe">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\bin\x86\Debug\ExportVectorTiles.UWP.exe">
       <PackagePath>entrypoint\ExportVectorTiles.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimberly.sundeen\.nuget\packages\esri.arcgisruntime\100.13.0\lib\uap10.0.18362\Esri.ArcGISRuntime.dll">
@@ -184,7 +184,7 @@
     <AppxPackagedFile Include="C:\Users\kimberly.sundeen\.nuget\packages\xamarin.forms\5.0.0.2244\lib\uap10.0.16299\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles\bin\Debug\netstandard2.0\ExportVectorTiles.dll">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles\bin\Debug\netstandard2.0\ExportVectorTiles.dll">
       <PackagePath>ExportVectorTiles.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimberly.sundeen\.nuget\packages\win2d.uwp\1.20.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
@@ -637,43 +637,43 @@
     <AppxPackagedFile Include="C:\Users\kimberly.sundeen\.nuget\packages\esri.arcgisruntime.uwp\100.13.0\resources\shaders\water_3d_vs.cso">
       <PackagePath>RuntimeCoreNet\resources\shaders\water_3d_vs.cso</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\bin\x86\Debug\ExportVectorTiles.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\bin\x86\Debug\ExportVectorTiles.UWP.xr.xml">
       <PackagePath>ExportVectorTiles.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.UniversalCRT.Debug\10.0.19041.0\\redist\Debug\x86\ucrtbased.dll">
@@ -685,10 +685,10 @@
     <AppxPackagedFile Include="C:\Users\kimberly.sundeen\.nuget\packages\microsoft.ui.xaml\2.4.3\buildTransitive\..\lib\uap10.0\Microsoft.UI.Xaml.winmd">
       <PackagePath>WinMetadata\Microsoft.UI.Xaml.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimberly.sundeen\Documents\GitHub\ExportMethodsCompared_EsriSample\ExportMethodsCompared_backup\ExportVectorTiles.UWP\bin\x86\Debug\Core\ExportVectorTiles.UWP.exe">
+    <AppxPackagedFile Include="C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\bin\x86\Debug\Core\ExportVectorTiles.UWP.exe">
       <PackagePath>ExportVectorTiles.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

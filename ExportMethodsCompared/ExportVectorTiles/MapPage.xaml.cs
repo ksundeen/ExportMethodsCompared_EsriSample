@@ -26,12 +26,13 @@ namespace ExportVectorTiles
         private string _rasterTilePath;
         private string _vectorTilePath;
         private string _offlineMapPath;
-        //private string _offlineMapPathLocal = 
+        private string _useExistingOfflineMapPath = "C:\\Users\\kimberly.sundeen\\AppData\\Local\\Packages\\b4686218-b283-4f11-86af-e37d325ad535_eym0c1r99ygm4\\AC\\Temp\\OfflineMap_expanded_0.8_1";
 
         // Flag to indicate whether an exported map/cache is being previewed.
         private bool _vectorTilesPreviewOpen = false;
         private bool _rasterTilesPreviewOpen = false;
         private bool _offlineMapPreviewOpen = false;
+        private bool _useExistingOfflineMapPreviewOpen = false;
 
         // Percentage increase/decrease of envelope to test sizes
         double _percentageIncrease = 0.80;
@@ -104,6 +105,7 @@ namespace ExportVectorTiles
                 RasterTilesCachePreviewButton.IsEnabled = true;
                 VectorTilesCachePreviewButton.IsEnabled = true;
                 OfflineMapPreviewButton.IsEnabled = true;
+                UseExistingOfflineMapPreviewButton.IsEnabled = true;
 
                 // Set viewpoint of the map.
                 //MyMapView.SetViewpoint(new Viewpoint(-4.853791, 140.983598, _basemap.MinScale));
@@ -390,6 +392,114 @@ namespace ExportVectorTiles
             }
         }
 
+        public async Task StartUseExistingOfflineMapExport()
+        {
+            try
+            {
+                ArcGISPortal Portal = await ArcGISPortal.CreateAsync();
+
+                // Get a web map item using its ID.
+                PortalItem webmapItem = await PortalItem.CreateAsync(Portal, _vectorWebMapId);
+
+                // Create a map from the web map item & set current map
+                //Map onlineMap = new Map(webmapItem);
+                //MyMapView.Map = onlineMap;
+
+                await Application.Current.MainPage.DisplayAlert("Using Existing Offline Map", "Download started...", "OK");
+
+                // Create a new folder for the output mobile map.
+                Debug.WriteLine("Export located: " + _offlineMapPath);
+
+                try
+                {
+                    // Create an offline map task with the current (online) map.
+                    OfflineMapTask takeMapOfflineTask = await OfflineMapTask.CreateAsync(webmapItem);
+
+                    GenerateOfflineMapParameters parameters = await takeMapOfflineTask.CreateDefaultGenerateOfflineMapParametersAsync(_areaOfInterest);
+                    parameters.EsriVectorTilesDownloadOption = EsriVectorTilesDownloadOption.UseReducedFontsService;
+                    parameters.MaxScale = 500;
+                    parameters.MinScale = 10000000;
+                    parameters.IncludeBasemap = true;
+                    parameters.AreaOfInterest = _areaOfInterest;
+
+                    // Configure basemap settings for the job.
+                    ConfigureOfflineJobForBasemap(parameters);
+
+                    parameters.ReferenceBasemapDirectory = _useExistingOfflineMapPath;
+                    parameters.ReferenceBasemapFilename = "OfflineMap_expanded_0.8_";
+                    /*************************/
+                    /*************************/
+                    /********** TODO *********/
+                    // Look into how this directory is set on iOS and Android.
+                    // Can we used this to set the font directory?
+                    //parameters.ReferenceBasemapDirectory = Set location of existing data on device
+                    //parameters.ReferenceBasemapFilename = Set filename of basemap to use on device
+                    /*************************/
+                    /*************************/
+
+                    // Check offline capabilities
+                    CheckOfflineCapabilities(takeMapOfflineTask, parameters);
+                    #region overrides
+
+                    // Generate parameter overrides for more in-depth control of the job.
+                    GenerateOfflineMapParameterOverrides overrides = await takeMapOfflineTask.CreateGenerateOfflineMapParameterOverridesAsync(parameters);
+
+                    // Configure the overrides using helper methods.
+                    ConfigureOfflineTileLayerOverrides(overrides);
+
+                    // Create the job with the parameters and output location.
+                    GenerateOfflineMapJob generateOfflineMapJob = takeMapOfflineTask.GenerateOfflineMap(parameters, _offlineMapPath, overrides);
+
+                    #endregion overrides
+
+                    GenerateOfflineMapResult offlineMapResult = await generateOfflineMapJob.GetResultAsync();
+
+                    // Handle the progress changed event for the job.
+                    HandleExportUseExistingOfflineMapJobCompletion(generateOfflineMapJob, offlineMapResult);
+                }
+                catch (TaskCanceledException)
+                {
+                    // Generate offline map task was canceled.
+                    await Application.Current.MainPage.DisplayAlert("Cancelled", "Taking map offline was canceled", "OK");
+                }
+                catch (Exception ex)
+                {
+                    // Exception while taking the map offline.
+                    await Application.Current.MainPage.DisplayAlert("Offline Map Error", ex.Message.ToString(), "OK");
+
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Offline Map Error", ex.Message.ToString(), "OK");
+            }
+        }
+
+        private void ConfigureOfflineJobForBasemap(GenerateOfflineMapParameters parameters)
+        {
+            // Get the path to the basemap directory.
+            string basemapBasePath = GetDataFolder();
+
+            // Don't give the user a choice if there is no basemap specified.
+            if (String.IsNullOrWhiteSpace(parameters.ReferenceBasemapFilename))
+            {
+                return;
+            }
+            // Get the full path to the basemap by combining the name specified in the web map (ReferenceBasemapFilename)
+            //  with the offline basemap directory.
+            string basemapFullPath = Path.Combine(basemapBasePath, parameters.ReferenceBasemapFilename);
+
+
+            // If the offline basemap doesn't exist, proceed without it.
+            if (!File.Exists(basemapFullPath))
+            {
+                return;
+            }
+
+            // Configure the offline basemap if the user said yes.
+            parameters.ReferenceBasemapDirectory = basemapBasePath;
+        }
+
         private void ConfigureOfflineTileLayerOverrides(GenerateOfflineMapParameterOverrides overrides)
         {
             // Create a parameter key for the first basemap layer. Type is Layer (can be FeatureLayer, ArcGISTiledLayer, or ArcGISVectorTiledLayer
@@ -534,7 +644,7 @@ namespace ExportVectorTiles
                 await Application.Current.MainPage.DisplayAlert("Error Job", "Raster Tile Job Failed", "OK");
 
                 // Change the export button text.
-                RasterTilesCachePreviewButton.Text = "Export Vector Tiles";
+                RasterTilesCachePreviewButton.Text = "Export Raster Tiles";
 
                 // Re-enable the export button.
                 RasterTilesCachePreviewButton.IsEnabled = true;
@@ -545,6 +655,45 @@ namespace ExportVectorTiles
         }
 
         private async void HandleExportOfflineMapJobCompletion(GenerateOfflineMapJob job, GenerateOfflineMapResult mapResult)
+        {
+            // Update the view if the job is complete.
+            if (job.Status == JobStatus.Succeeded)
+            {
+                // Show the exported tiles on the preview map.
+                UpdateOfflineMapPreviewMap(mapResult);
+
+                // Change the export button text.
+                OfflineMapPreviewButton.Text = "Close Offline Map Preview";
+
+                // Re-enable the button.
+                OfflineMapPreviewButton.IsEnabled = true;
+
+                // Set the preview open flag.
+                _offlineMapPreviewOpen = true;
+
+                // Store the overlay for later.
+                _overlay = MyMapView.GraphicsOverlays.FirstOrDefault();
+
+                // Then hide it.
+                MyMapView.GraphicsOverlays.Clear();
+            }
+            else if (job.Status == JobStatus.Failed)
+            {
+                // Notify the user.
+                await Application.Current.MainPage.DisplayAlert("Error Job", "Offline Map Job Failed", "OK");
+
+                // Change the export button text.
+                OfflineMapPreviewButton.Text = "Export Offline Map Tiles";
+
+                // Re-enable the export button.
+                OfflineMapPreviewButton.IsEnabled = true;
+
+                // Set the preview open flag.
+                _offlineMapPreviewOpen = false;
+            }
+        }
+
+        private async void HandleExportUseExistingOfflineMapJobCompletion(GenerateOfflineMapJob job, GenerateOfflineMapResult mapResult)
         {
             // Update the view if the job is complete.
             if (job.Status == JobStatus.Succeeded)
@@ -766,9 +915,62 @@ namespace ExportVectorTiles
                 await Application.Current.MainPage.DisplayAlert("Error Offline Map Preview", ex.ToString(), "OK");
             }
         }
+        private async void UseExistingOfflineMap_Click(object sender, EventArgs e)
+        {
+            // If preview isn't open, start an export.
+            try
+            {
+                if (!_useExistingOfflineMapPreviewOpen)
+                {
+                    // Disable the export button.
+                    UseExistingOfflineMapPreviewButton.IsEnabled = false;
+
+                    // Show the progress bar.
+                    UseExistingOfflineMapProgressBar.IsVisible = true;
+
+                    // Save the map viewpoint.
+                    _originalView = MyMapView.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
+
+                    // Start the export.
+                    await StartUseExistingOfflineMapExport();
+                }
+                else // Otherwise, close the preview.
+                {
+                    // Change the button text.
+                    UseExistingOfflineMapPreviewButton.Text = "Using Existing Offline Map";
+
+                    // Clear the preview open flag.
+                    _useExistingOfflineMapPreviewOpen = false;
+
+                    // Re-size the mapview.
+                    MyMapView.Margin = new Thickness(0);
+
+                    // Re-apply the original map.
+                    MyMapView.Map = _basemap;
+
+                    // Re-apply the original viewpoint.
+                    MyMapView.SetViewpoint(_originalView);
+
+                    // Re-show the overlay.
+                    MyMapView.GraphicsOverlays.Add(_overlay);
+
+                    // Update the graphic.
+                    UpdateMapExtentGraphic();
+                }
+            }
+            catch (Exception ex)
+            {
+                await Application.Current.MainPage.DisplayAlert("Error Offline Map Preview", ex.ToString(), "OK");
+                // Change the button text.
+                UseExistingOfflineMapPreviewButton.Text = "Using Existing Offline Map";
+
+                // Clear the preview open flag.
+                _useExistingOfflineMapPreviewOpen = false;
+            }
+        }
         public string CreateDownloadPackagePath(DownloadMapType downloadMapType)
         {
-            string folderName = $"{downloadMapType.ToString()}_percentage{_percentageIncrease.ToString()}";
+            string folderName = $"{downloadMapType.ToString()}_expanded_{_percentageIncrease.ToString()}_";
             // Create a new folder for the output mobile map.
             string packagePath = Path.Combine(Environment.ExpandEnvironmentVariables("%TEMP%"), folderName);
             int num = 1;
@@ -788,6 +990,45 @@ namespace ExportVectorTiles
             VectorTile,
             RasterTile,
             OfflineMap
+        }
+
+
+        internal static string GetDataFolder()
+        {
+        #if NETFX_CORE
+            string appDataFolder = Windows.Storage.ApplicationData.Current.LocalFolder.Path;
+        #elif XAMARIN
+            string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+        #else
+            string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+        #endif
+            string dataFolder = Path.Combine(appDataFolder, "MapAppData");
+
+            if (!Directory.Exists(dataFolder)) { Directory.CreateDirectory(dataFolder); }
+
+            return dataFolder;
+        }
+
+        
+        /// <summary>
+        /// Gets the path to an item on disk. 
+        /// The item must have already been downloaded for the path to be valid.
+        /// </summary>
+        /// <param name="itemId">ID of the portal item.</param>
+        internal static string GetDataFolder(string itemId)
+        {
+            return Path.Combine(GetDataFolder(), itemId);
+        }
+
+        /// <summary>
+        /// Gets the path to an item on disk. 
+        /// The item must have already been downloaded for the path to be valid.
+        /// </summary>
+        /// <param name="itemId">ID of the portal item.</param>
+        /// <param name="pathParts">Components of the path.</param>
+        internal static string GetDataFolder(string itemId, params string[] pathParts)
+        {
+            return Path.Combine(GetDataFolder(itemId), Path.Combine(pathParts));
         }
 
         // Map initialization logic is contained in MapViewModel.cs

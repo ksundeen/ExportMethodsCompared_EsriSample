@@ -10998,11 +10998,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.UWP\\ExportVectorTiles.UWP.csproj",
+      "projectUniqueName": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.UWP\\ExportVectorTiles.UWP.csproj",
       "projectName": "ExportVectorTiles.UWP",
-      "projectPath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.UWP\\ExportVectorTiles.UWP.csproj",
+      "projectPath": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.UWP\\ExportVectorTiles.UWP.csproj",
       "packagesPath": "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.UWP\\obj\\",
+      "outputPath": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -11025,8 +11025,8 @@
       "frameworks": {
         "uap10.0.18362": {
           "projectReferences": {
-            "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles\\ExportVectorTiles.csproj": {
-              "projectPath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles\\ExportVectorTiles.csproj"
+            "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles\\ExportVectorTiles.csproj": {
+              "projectPath": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles\\ExportVectorTiles.csproj"
             }
           }
         }

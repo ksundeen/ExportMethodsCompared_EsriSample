@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zgwRxTtxWIfO9NPF0peGn46ImiGxguhhABMcOy3CiCD0G35DLMEz37OOoTvjXF3o92b861zoMQ6xLiSG0Pxvgg==",
+  "dgSpecHash": "1e80nzKnLmWcA1bX1JLGR7rV+1rO8FEfDRdhvC2/U6HLcH+lD6owcrbWrTN7mwqK0gNyfpqCim/+MOsEY6N59Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kimberly.sundeen\\Documents\\GitHub\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles\\ExportVectorTiles.csproj",
+  "projectFilePath": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles\\ExportVectorTiles.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime\\100.13.0\\esri.arcgisruntime.100.13.0.nupkg.sha512",
     "C:\\Users\\kimberly.sundeen\\.nuget\\packages\\esri.arcgisruntime.xamarin.forms\\100.13.0\\esri.arcgisruntime.xamarin.forms.100.13.0.nupkg.sha512",
