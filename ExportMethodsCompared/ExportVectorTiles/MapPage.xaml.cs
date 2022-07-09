@@ -12,21 +12,32 @@ using Colors = System.Drawing.Color;
 using System.Diagnostics;
 using Esri.ArcGISRuntime.Portal;
 using Esri.ArcGISRuntime.Tasks;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 
-namespace ExportVectorTiles
+namespace ExportBasemapsMethods
 {
-    public partial class MapPage : ContentPage
+    public partial class MainPage : ContentPage
     {
         // URL to the service tiles will be exported from.
-        private static Uri _rasterTileServiceUri = new Uri("https://tiledbasemaps.arcgis.com/arcgis/rest/services/World_Street_Map/MapServer");
+        // Get other vector basemaps enabled for offline export: https://www.arcgis.com/home/group.html?id=c61ab1493fff4b84b53705184876c9b0#overview
+        private static Uri _rasterTileServiceUri = new Uri("https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer");
+        //private static Uri _rasterTileServiceUri = new Uri("https://tiledbasemaps.arcgis.com/arcgis/rest/services/World_Street_Map/MapServer");
+
+        // Default Street Map
         private static Uri _vectorTileServiceUri = new Uri("https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_Export_v2/VectorTileServer");
+
+        // Topographic
+        //private static Uri _vectorTileServiceUri = new Uri("https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_Export_v2/VectorTileServer");
+
+        // Satellite - not a raster service!
+        //private static Uri _vectorTileServiceUri = new Uri("https://basemaps.arcgis.com/arcgis/rest/services/World_Basemap_Export_v2/VectorTileServer");
         private static string _vectorWebMapId = "55ebf90799fa4a3fa57562700a68c405"; // https://www.arcgis.com/home/item.html?id=55ebf90799fa4a3fa57562700a68c405
 
         // Path to exported tile caches.
         private string _rasterTilePath;
         private string _vectorTilePath;
         private string _offlineMapPath;
-        private string _useExistingOfflineMapPath = "C:\\Users\\kimberly.sundeen\\AppData\\Local\\Packages\\b4686218-b283-4f11-86af-e37d325ad535_eym0c1r99ygm4\\AC\\Temp\\OfflineMap_expanded_0.8_1";
 
         // Flag to indicate whether an exported map/cache is being previewed.
         private bool _vectorTilesPreviewOpen = false;
@@ -37,9 +48,11 @@ namespace ExportVectorTiles
         // Percentage increase/decrease of envelope to test sizes
         double _percentageIncrease = 0.80;
 
-        // Max and min levels of download scale details
+        // Max and min levels of download scale details for raster basemaps
         int _minLevelOfDetails = 2;
         int _maxLevelOfDetails = 20;
+
+        // Vector basemap levels of detail to download. The higher # == more zoom scales downloaded.
         int _maxLevelScale = 100;
 
         // Reference to the original basemap.
@@ -53,12 +66,20 @@ namespace ExportVectorTiles
 
         private Envelope _areaOfInterest;
 
-        public MapPage()
+        //private string _extentWidthLabel;
+        //public string ExtentWidthLabel
+        //{
+        //    get { return _extentWidthLabel; } 
+        //    set { _extentWidthLabel = value; } 
+        //}
+
+        public MainPage()
         {
             Esri.ArcGISRuntime.ArcGISRuntimeEnvironment.ApiKey = "AAPK7074c02698a04da889a8f1a82cf5db3ewXp6U8-vIef5maXJT8W7AYgw4BGi_KjSdKq2L2f2uR-JFFeH1j0ZMWBg9qmNjsws";
             InitializeComponent();
             InitializeMap();
         }
+
 
         private async void InitializeMap()
         {
@@ -76,8 +97,8 @@ namespace ExportVectorTiles
                 _basemap = new Map(BasemapStyle.ArcGISStreets) //Needs an API Key
                 {
                     // Set the min and max scale - export task fails if the scale is too big or small.
-                    MaxScale = 2000,
-                    MinScale = 10000000
+                    MaxScale = 500,     // zoome in to level of detail 20 (building)
+                    MinScale = 70000000 // zoomed out to largest country
                 };
                 // Assign the map to the mapview.
                 MyMapView.Map = _basemap;
@@ -121,7 +142,6 @@ namespace ExportVectorTiles
                 };
                 _areaOfInterest = envelopeBldr.ToGeometry();
 
-
                 MyMapView.SetViewpoint(new Viewpoint(_areaOfInterest));
 
             }
@@ -154,6 +174,7 @@ namespace ExportVectorTiles
 
             // Get the updated extent for the new viewpoint.
             Envelope extent = myViewPoint.TargetGeometry as Envelope;
+            _areaOfInterest = extent;
 
             // Return if extent is null.
             if (extent == null) { return; }
@@ -161,6 +182,8 @@ namespace ExportVectorTiles
             // Create an envelope that is a bit smaller than the extent.
             EnvelopeBuilder envelopeBldr = new EnvelopeBuilder(extent);
             envelopeBldr.Expand(_percentageIncrease);
+
+            CalculateAreaLabels(envelopeBldr);
 
             // Get the (only) graphics overlay in the map view.
             GraphicsOverlay extentOverlay = MyMapView.GraphicsOverlays.FirstOrDefault();
@@ -183,6 +206,34 @@ namespace ExportVectorTiles
                 extentGraphic.Geometry = envelopeBldr.ToGeometry();
             }
         }
+
+        public void CalculateAreaLabels(EnvelopeBuilder envelopeBldr)
+        {
+            double w = envelopeBldr.Width;
+            double h = envelopeBldr.Height;
+
+            ExtentWidthLabel.Text = envelopeBldr.Width.ToString();
+            ExtentHeightLabel.Text = envelopeBldr.Height.ToString();
+
+            double extentArea = w * h;
+            ExtentAreaLabel.Text = extentArea.ToString();
+
+            double wMi = envelopeBldr.Width * 0.000621371;
+            double hMi = envelopeBldr.Height * 0.000621371;
+
+            ExtentWidthLabelMi.Text = wMi.ToString();
+            ExtentHeightLabelMi.Text = hMi.ToString();
+
+            double extentAreaMi = wMi * hMi;
+            ExtentAreaLabelMi.Text = extentAreaMi.ToString();
+
+            Debug.WriteLine("Extent Graphic Width: " + envelopeBldr.Width);
+            Debug.WriteLine("Extent Graphic Height: " + envelopeBldr.Height);
+
+            // Label Map Scales
+            MapScaleLabel.Text = MyMapView.MapScale.ToString();
+        }
+
         private async Task StartRasterTilesExport()
         {
             try
@@ -193,7 +244,7 @@ namespace ExportVectorTiles
 
 
                 // Update the tile cache path.
-                string packagePath = CreateDownloadPackagePath(DownloadMapType.RasterTile);
+                string packagePath = GetDataFolder(_vectorWebMapId);
                 _rasterTilePath = Path.Combine(packagePath, "RasterTiles.tpk");
                 Debug.WriteLine("Export located: " + _rasterTilePath);
 
@@ -225,6 +276,17 @@ namespace ExportVectorTiles
             catch (Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("Error Export Raster Tile Package Task", ex.ToString(), "OK");
+
+                RasterTilesProgressBar.IsVisible = false;
+
+                // Change the export button text.
+                RasterTilesCachePreviewButton.Text = "Export Raster Tiles";
+
+                // Re-enable the export button.
+                RasterTilesCachePreviewButton.IsEnabled = true;
+
+                // Set the preview open flag.
+                _rasterTilesPreviewOpen = false;
             }
         }
 
@@ -234,8 +296,9 @@ namespace ExportVectorTiles
             {
                 // Update the tile cache path.
                 //_vectorTilePath = $"{Path.GetTempFileName()}.vtpk";
-                string packagePath = CreateDownloadPackagePath(DownloadMapType.VectorTile);
+                string packagePath = GetDataFolder(_vectorWebMapId);
                 _vectorTilePath = Path.Combine(packagePath, "VectorTiles.vtpk");
+
                 Debug.WriteLine("Export located: " + _vectorTilePath);
 
                 // Get the parameters for the job.
@@ -266,6 +329,17 @@ namespace ExportVectorTiles
             catch (Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("Error Export Vector Tiles Task", ex.ToString(), "OK");
+
+                VectorTilesProgressBar.IsVisible = false;
+
+                // Change the export button text.
+                VectorTilesCachePreviewButton.Text = "Export Raster Tiles";
+
+                // Re-enable the export button.
+                VectorTilesCachePreviewButton.IsEnabled = true;
+
+                // Set the preview open flag.
+                _vectorTilesPreviewOpen = false;
             }
         }
 
@@ -328,7 +402,7 @@ namespace ExportVectorTiles
                 await Application.Current.MainPage.DisplayAlert("Offline Map", "Download started...", "OK");
 
                 // Create a new folder for the output mobile map.
-                _offlineMapPath = CreateDownloadPackagePath(DownloadMapType.OfflineMap);
+                _offlineMapPath = CreateDownloadPackagePath(_vectorWebMapId, "OfflineMapData");// DownloadMapType.OfflineMap);
                 Debug.WriteLine("Export located: " + _offlineMapPath);
 
                 try
@@ -342,6 +416,13 @@ namespace ExportVectorTiles
                     parameters.MinScale = 10000000;
                     parameters.IncludeBasemap = true;
                     parameters.AreaOfInterest = _areaOfInterest;
+
+                    // ONLY SET FOR USING EXISTING BASEMAP... 
+                    //parameters.ReferenceBasemapFilename = "VectorTiles.tpk";
+
+                    // Configure basemap settings for the job.
+                    //ConfigureUseExistingOfflineJobForBasemap(parameters);
+
                     //parameters.ReferenceBasemapDirectory = _offlineMapPath;
                     //parameters.ReferenceBasemapFilename = 
                     /*************************/
@@ -366,7 +447,6 @@ namespace ExportVectorTiles
 
                     // Create the job with the parameters and output location.
                     GenerateOfflineMapJob generateOfflineMapJob = takeMapOfflineTask.GenerateOfflineMap(parameters, _offlineMapPath, overrides);
-
                     #endregion overrides
 
                     GenerateOfflineMapResult offlineMapResult = await generateOfflineMapJob.GetResultAsync();
@@ -389,10 +469,21 @@ namespace ExportVectorTiles
             catch (Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("Offline Map Error", ex.Message.ToString(), "OK");
+
+                OfflineMapProgressBar.IsVisible = false;
+
+                // Change the export button text.
+                OfflineMapPreviewButton.Text = "Export Raster Tiles";
+
+                // Re-enable the export button.
+                OfflineMapPreviewButton.IsEnabled = true;
+
+                // Set the preview open flag.
+                _offlineMapPreviewOpen = false;
             }
         }
 
-        public async Task StartUseExistingOfflineMapExport()
+        public async Task StartUseExistingOfflineMapExport(string mapType = "vector")
         {
             try
             {
@@ -408,7 +499,7 @@ namespace ExportVectorTiles
                 await Application.Current.MainPage.DisplayAlert("Using Existing Offline Map", "Download started...", "OK");
 
                 // Create a new folder for the output mobile map.
-                Debug.WriteLine("Export located: " + _offlineMapPath);
+                _offlineMapPath = CreateDownloadPackagePath(_vectorWebMapId, "useExistingOfflineMapData");// DownloadMapType.OfflineMap);
 
                 try
                 {
@@ -421,21 +512,10 @@ namespace ExportVectorTiles
                     parameters.MinScale = 10000000;
                     parameters.IncludeBasemap = true;
                     parameters.AreaOfInterest = _areaOfInterest;
+                    parameters.ReferenceBasemapFilename = mapType == "vector" ? "VectorTiles.vtpk" : "RasterTiles.tpk";
 
                     // Configure basemap settings for the job.
-                    ConfigureOfflineJobForBasemap(parameters);
-
-                    parameters.ReferenceBasemapDirectory = _useExistingOfflineMapPath;
-                    parameters.ReferenceBasemapFilename = "OfflineMap_expanded_0.8_";
-                    /*************************/
-                    /*************************/
-                    /********** TODO *********/
-                    // Look into how this directory is set on iOS and Android.
-                    // Can we used this to set the font directory?
-                    //parameters.ReferenceBasemapDirectory = Set location of existing data on device
-                    //parameters.ReferenceBasemapFilename = Set filename of basemap to use on device
-                    /*************************/
-                    /*************************/
+                    parameters.ReferenceBasemapDirectory = GetBasemapDirectoryForExistingOfflineJob(parameters);
 
                     // Check offline capabilities
                     CheckOfflineCapabilities(takeMapOfflineTask, parameters);
@@ -445,13 +525,12 @@ namespace ExportVectorTiles
                     GenerateOfflineMapParameterOverrides overrides = await takeMapOfflineTask.CreateGenerateOfflineMapParameterOverridesAsync(parameters);
 
                     // Configure the overrides using helper methods.
-                    ConfigureOfflineTileLayerOverrides(overrides);
+                    //ConfigureOfflineTileLayerOverrides(overrides);
 
                     // Create the job with the parameters and output location.
                     GenerateOfflineMapJob generateOfflineMapJob = takeMapOfflineTask.GenerateOfflineMap(parameters, _offlineMapPath, overrides);
 
                     #endregion overrides
-
                     GenerateOfflineMapResult offlineMapResult = await generateOfflineMapJob.GetResultAsync();
 
                     // Handle the progress changed event for the job.
@@ -460,7 +539,7 @@ namespace ExportVectorTiles
                 catch (TaskCanceledException)
                 {
                     // Generate offline map task was canceled.
-                    await Application.Current.MainPage.DisplayAlert("Cancelled", "Taking map offline was canceled", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Cancelled", "Taking map offline was ConfigureOfflineJobForBasemapcanceled", "OK");
                 }
                 catch (Exception ex)
                 {
@@ -472,32 +551,41 @@ namespace ExportVectorTiles
             catch (Exception ex)
             {
                 await Application.Current.MainPage.DisplayAlert("Offline Map Error", ex.Message.ToString(), "OK");
+
+                UseExistingOfflineMapProgressBar.IsVisible = false;
+
+                // Change the export button text.
+                UseExistingOfflineMapPreviewButton.Text = "Use Existing Offline Map";
+
+                // Re-enable the export button.
+                UseExistingOfflineMapPreviewButton.IsEnabled = true;
+
+                // Set the preview open flag.
+                _useExistingOfflineMapPreviewOpen = false;
             }
         }
 
-        private void ConfigureOfflineJobForBasemap(GenerateOfflineMapParameters parameters)
+        private string GetBasemapDirectoryForExistingOfflineJob(GenerateOfflineMapParameters parameters)
         {
             // Get the path to the basemap directory.
-            string basemapBasePath = GetDataFolder();
+            string basemapBasePath = GetDataFolder(_vectorWebMapId);
 
+
+            string basemapFullPath = Path.Combine(basemapBasePath, parameters.ReferenceBasemapFilename);
             // Don't give the user a choice if there is no basemap specified.
+
             if (String.IsNullOrWhiteSpace(parameters.ReferenceBasemapFilename))
             {
-                return;
+                return "";
             }
-            // Get the full path to the basemap by combining the name specified in the web map (ReferenceBasemapFilename)
-            //  with the offline basemap directory.
-            string basemapFullPath = Path.Combine(basemapBasePath, parameters.ReferenceBasemapFilename);
-
 
             // If the offline basemap doesn't exist, proceed without it.
             if (!File.Exists(basemapFullPath))
             {
-                return;
+                return "";
             }
 
-            // Configure the offline basemap if the user said yes.
-            parameters.ReferenceBasemapDirectory = basemapBasePath;
+            return basemapBasePath;
         }
 
         private void ConfigureOfflineTileLayerOverrides(GenerateOfflineMapParameterOverrides overrides)
@@ -538,6 +626,8 @@ namespace ExportVectorTiles
 
             // Expand the area of interest based on the specified buffer distance.
             basemapVectorTileParameters.AreaOfInterest = _areaOfInterest;
+            //overrides.ExportVectorTilesParameters.Add(basemapVectorTileKey, basemapVectorTileParameters);
+
         }
 
         private async void CheckOfflineCapabilities(OfflineMapTask task, GenerateOfflineMapParameters parameters)
@@ -551,8 +641,8 @@ namespace ExportVectorTiles
                     if (!layerCapability.Value.SupportsOffline)
                     {
                         await Application.Current.MainPage.DisplayAlert(
-                            "Offline Map Error", 
-                            layerCapability.Key.Name + " cannot be taken offline. Error : " + layerCapability.Value.Error.Message, 
+                            "Offline Map Error",
+                            layerCapability.Key.Name + " cannot be taken offline. Error : " + layerCapability.Value.Error.Message,
                             "OK");
                     }
                 }
@@ -572,7 +662,7 @@ namespace ExportVectorTiles
             else
             {
                 // All layers and tables can be taken offline!
-                        await Application.Current.MainPage.DisplayAlert("Offline Status", "All layers can be exported", "OK");
+                await Application.Current.MainPage.DisplayAlert("Offline Status", "All layers can be exported", "OK");
             }
         }
 
@@ -699,16 +789,16 @@ namespace ExportVectorTiles
             if (job.Status == JobStatus.Succeeded)
             {
                 // Show the exported tiles on the preview map.
-                UpdateOfflineMapPreviewMap(mapResult);
+                UpdateUseExistingOfflineMapPreviewMap(mapResult);
 
                 // Change the export button text.
-                OfflineMapPreviewButton.Text = "Close Offline Map Preview";
+                UseExistingOfflineMapPreviewButton.Text = "Close Existing Offline Map Preview";
 
                 // Re-enable the button.
-                OfflineMapPreviewButton.IsEnabled = true;
+                UseExistingOfflineMapPreviewButton.IsEnabled = true;
 
                 // Set the preview open flag.
-                _offlineMapPreviewOpen = true;
+                _useExistingOfflineMapPreviewOpen = true;
 
                 // Store the overlay for later.
                 _overlay = MyMapView.GraphicsOverlays.FirstOrDefault();
@@ -722,13 +812,13 @@ namespace ExportVectorTiles
                 await Application.Current.MainPage.DisplayAlert("Error Job", "Offline Map Job Failed", "OK");
 
                 // Change the export button text.
-                OfflineMapPreviewButton.Text = "Export Offline Map Tiles";
+                UseExistingOfflineMapPreviewButton.Text = "Use Existing Offline Map Tiles";
 
                 // Re-enable the export button.
-                OfflineMapPreviewButton.IsEnabled = true;
+                UseExistingOfflineMapPreviewButton.IsEnabled = true;
 
                 // Set the preview open flag.
-                _offlineMapPreviewOpen = false;
+                _useExistingOfflineMapPreviewOpen = false;
             }
         }
 
@@ -763,6 +853,19 @@ namespace ExportVectorTiles
         }
         private void UpdateOfflineMapPreviewMap(GenerateOfflineMapResult mapResult)
         {
+            // Hide the progress bar.
+            OfflineMapProgressBar.IsVisible = false;
+            // Load the offline map
+            MyMapView.Map = mapResult.OfflineMap;
+
+            // Re-size the mapview.
+            MyMapView.Margin = new Thickness(40);
+        }
+
+        private void UpdateUseExistingOfflineMapPreviewMap(GenerateOfflineMapResult mapResult)
+        {
+            // Hide the progress bar.
+            UseExistingOfflineMapProgressBar.IsVisible = false;
             // Load the offline map
             MyMapView.Map = mapResult.OfflineMap;
 
@@ -932,7 +1035,8 @@ namespace ExportVectorTiles
                     _originalView = MyMapView.GetCurrentViewpoint(ViewpointType.BoundingGeometry);
 
                     // Start the export.
-                    await StartUseExistingOfflineMapExport();
+                    await StartUseExistingOfflineMapExport("raster");
+                    await StartUseExistingOfflineMapExport("vector");
                 }
                 else // Otherwise, close the preview.
                 {
@@ -968,21 +1072,54 @@ namespace ExportVectorTiles
                 _useExistingOfflineMapPreviewOpen = false;
             }
         }
-        public string CreateDownloadPackagePath(DownloadMapType downloadMapType)
+        public string CreateDownloadPackagePath(string itemId, string folderName)
         {
-            string folderName = $"{downloadMapType.ToString()}_expanded_{_percentageIncrease.ToString()}_";
-            // Create a new folder for the output mobile map.
-            string packagePath = Path.Combine(Environment.ExpandEnvironmentVariables("%TEMP%"), folderName);
-            int num = 1;
-            while (Directory.Exists(packagePath))
+            try
             {
-                packagePath = Path.Combine(Environment.ExpandEnvironmentVariables("%TEMP%"), folderName + num.ToString());
-                num++;
-            }
+                // Clean up any previous outputs in the temp directory.
+                //string tempPath = $"{Path.GetTempPath()}";
+                string tempPath = GetDataFolder(itemId);
 
-            // Create the output directory.
-            Directory.CreateDirectory(packagePath);
-            return packagePath;
+                if (Directory.Exists(tempPath))
+                {
+                    Debug.WriteLine("tempPath: " + tempPath);
+                    string[] outputFolders = Directory.GetDirectories(tempPath, folderName);
+
+                    // Loop through the folder names and delete them.
+                    foreach (string dir in outputFolders)
+                    {
+                        try
+                        {
+                            Directory.Delete(dir, true);
+                        }
+                        catch (Exception)
+                        {
+                            // Ignore exceptions (files might be locked, for example).
+                        }
+                    }
+                }
+
+                // Create a new folder for the output mobile map.
+                string packagePath = Path.Combine(tempPath, folderName);
+                int num = 1;
+                while (Directory.Exists(packagePath))
+                {
+                    packagePath = Path.Combine(tempPath, folderName + num.ToString());
+                    num++;
+                }
+
+                // Create the output directory if it doens't exist.
+                if (!Directory.Exists(packagePath))
+                {
+                    Directory.CreateDirectory(packagePath);
+                }
+                return packagePath;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("error in CreateDownloadPackagePath(): " + ex);
+                return null;
+            }
         }
 
         public enum DownloadMapType
@@ -995,21 +1132,24 @@ namespace ExportVectorTiles
 
         internal static string GetDataFolder()
         {
-        #if NETFX_CORE
+#if NETFX_CORE
             string appDataFolder = Windows.Storage.ApplicationData.Current.LocalFolder.Path;
-        #elif XAMARIN
+#elif XAMARIN
             string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-        #else
+#else
             string appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-        #endif
+#endif
             string dataFolder = Path.Combine(appDataFolder, "MapAppData");
 
-            if (!Directory.Exists(dataFolder)) { Directory.CreateDirectory(dataFolder); }
+            if (!Directory.Exists(dataFolder))
+            {
+                Directory.CreateDirectory(dataFolder);
+            }
 
             return dataFolder;
         }
 
-        
+
         /// <summary>
         /// Gets the path to an item on disk. 
         /// The item must have already been downloaded for the path to be valid.

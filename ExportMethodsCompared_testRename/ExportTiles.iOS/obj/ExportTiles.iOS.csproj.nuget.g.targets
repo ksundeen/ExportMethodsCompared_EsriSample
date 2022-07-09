@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)xamarin.forms\5.0.0.2244\buildTransitive\Xamarin.Forms.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\5.0.0.2244\buildTransitive\Xamarin.Forms.targets')" />
-    <Import Project="$(NuGetPackageRoot)esri.arcgisruntime.runtimes.ios\100.13.0\buildTransitive\Xamarin.iOS10\Esri.ArcGISRuntime.runtimes.iOS.targets" Condition="Exists('$(NuGetPackageRoot)esri.arcgisruntime.runtimes.ios\100.13.0\buildTransitive\Xamarin.iOS10\Esri.ArcGISRuntime.runtimes.iOS.targets')" />
-    <Import Project="$(NuGetPackageRoot)esri.arcgisruntime\100.13.0\buildTransitive\Xamarin.iOS10\Esri.ArcGISRuntime.targets" Condition="Exists('$(NuGetPackageRoot)esri.arcgisruntime\100.13.0\buildTransitive\Xamarin.iOS10\Esri.ArcGISRuntime.targets')" />
-    <Import Project="$(NuGetPackageRoot)esri.arcgisruntime.xamarin.ios\100.13.0\buildTransitive\xamarin.ios10\Esri.ArcGISRuntime.Xamarin.iOS.targets" Condition="Exists('$(NuGetPackageRoot)esri.arcgisruntime.xamarin.ios\100.13.0\buildTransitive\xamarin.ios10\Esri.ArcGISRuntime.Xamarin.iOS.targets')" />
-  </ImportGroup>
-</Project>

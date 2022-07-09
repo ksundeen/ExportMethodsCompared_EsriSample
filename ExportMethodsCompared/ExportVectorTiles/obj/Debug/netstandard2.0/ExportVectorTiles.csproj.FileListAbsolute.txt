@@ -10,3 +10,15 @@ C:\repos\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\Export
 C:\repos\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\XamlC.stamp
 C:\repos\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\ExportVectorTiles.dll
 C:\repos\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\ExportVectorTiles.pdb
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\bin\Debug\netstandard2.0\ExportVectorTiles.deps.json
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\bin\Debug\netstandard2.0\ExportVectorTiles.dll
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\bin\Debug\netstandard2.0\ExportVectorTiles.pdb
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\ExportVectorTiles.csproj.AssemblyReference.cache
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\ExportVectorTiles.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\MapPage.xaml.g.cs
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\ExportVectorTiles.AssemblyInfoInputs.cache
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\ExportVectorTiles.AssemblyInfo.cs
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\ExportVectorTiles.csproj.CoreCompileInputs.cache
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\XamlC.stamp
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\ExportVectorTiles.dll
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles\obj\Debug\netstandard2.0\ExportVectorTiles.pdb

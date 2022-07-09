@@ -1,1 +1,1 @@
-C:\repos\ExportMethodsCompared\ExportVectorTiles.UWP\ExportVectorTiles.UWP.csproj;x86
+C:\repos\ExportMethodsCompared_EsriSample\ExportMethodsCompared\ExportVectorTiles.UWP\ExportVectorTiles.UWP.csproj;x86

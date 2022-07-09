@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8zg0BRKFH6viDHhMKVAD+4ss/MenFMbR6wTcg8g/tbdf/mJL6LJhPeQlnBFPnSbtsZPkbzrJugV1qOBpEJj9RQ==",
+  "dgSpecHash": "h2wnq2qgqvoerwpmyEWEnvFapntcnU79zFLMm0siSt/cgYN0jFVhmjqCo5aOPgYFtnkyuCY800N0Aw7HMxNupQ==",
   "success": true,
   "projectFilePath": "C:\\repos\\ExportMethodsCompared_EsriSample\\ExportMethodsCompared\\ExportVectorTiles.UWP\\ExportVectorTiles.UWP.csproj",
   "expectedPackageFiles": [
